@@ -16,3 +16,4 @@ deploy:
         clean_removed_files: true
         branch: master
         repo: SamuelDebruyn/samueldebruyn.github.io
+        gh_pages_domain: sa.muel.be
