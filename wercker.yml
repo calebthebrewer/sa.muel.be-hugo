@@ -4,11 +4,10 @@ build:
     - script:
         name: install git
         code: |
-          sudo apt-get update && sudo apt-get install git -y
+          apt-get update && apt-get install git -y
     - script:
         name: initialize git submodules
         code: |
-            cd ..
             git submodule update --init --recursive
     - arjen/hugo-build:
         version: "0.14"
@@ -18,7 +17,7 @@ deploy:
     - script:
         name: install git
         code: |
-          sudo apt-get update && sudo apt-get install git -y
+          apt-get update && apt-get install git -y
     - leipert/git-push:
         gh_oauth: $GIT_TOKEN
         basedir: public
