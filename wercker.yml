@@ -1,11 +1,4 @@
-box: publysher/hugo
+box: wercker/default
 build:
   steps:
-    - arjen/hugo-build:
-deploy:
-  steps:
-    - lukevivier/gh-pages:
-        token: $GIT_TOKEN
-        domain: sa.muel.be
-        basedir: public
-        repo: SamuelDebruyn/samueldebruyn.github.io
+    - arjen/hugo-build
