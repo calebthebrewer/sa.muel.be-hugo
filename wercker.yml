@@ -22,3 +22,10 @@ build:
   steps:
   - arjen/hugo-build@1.4.0
   
+deploy:
+  steps:
+    - lukevivier/gh-pages@0.2.1
+        token: $GIT_TOKEN
+        domain: sa.muel.be
+        basedir: public
+        repo: SamuelDebruyn/samueldebruyn.github.io
