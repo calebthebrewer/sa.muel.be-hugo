@@ -1,4 +1,4 @@
-baseurl = "https://sa.muel.be/"
+baseurl = "http://sa.muel.be/"
 languageCode = "en-us"
 title = "Samuel Debruyn"
 paginate = 7
