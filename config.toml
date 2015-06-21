@@ -4,5 +4,12 @@ title = "Samuel Debruyn"
 paginate = 7
 theme = "crisp"
 
+[params]
+    twitter = "SamuelDebruyn"
+    description = "personal website and blog of Samuel Debruyn"
+
+[permalinks]
+    post = "/:year/:title/"
+
 [author]
     name = "Samuel Debruyn"

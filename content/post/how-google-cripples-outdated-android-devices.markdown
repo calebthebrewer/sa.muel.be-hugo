@@ -1,9 +1,6 @@
 +++
 date = "2015-03-23T00:00:00+00:00"
 title = "How Google cripples outdated Android devices"
-aliases = [
-    "/2015/how-google-cripples-outdated-android-devices/"
-]
 +++
 
 ## Why I downgraded my Nexus 5

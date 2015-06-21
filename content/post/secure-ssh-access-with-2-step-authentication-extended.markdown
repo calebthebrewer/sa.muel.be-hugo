@@ -1,9 +1,6 @@
 +++
 title = "Secure SSH access with 2-step authentication (extended)"
 date = "2014-02-08T00:00:00+00:00"
-aliases = [
-    "/2014/secure-ssh-access-with-2-step-authentication-extended/"
-]
 +++
 
 In this quick tutorial I'll show you how to secure SSH access to your Linux server with 2-step authentication. Why did I call this post 'extended'? Because I'll show you how to add extra rules so you don't have to use 2-step authentication from certain locations.

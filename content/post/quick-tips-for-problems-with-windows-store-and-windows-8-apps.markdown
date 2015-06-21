@@ -1,9 +1,6 @@
 +++
 title = "Quick tips for problems with Windows Store and Windows 8 apps"
 date = "2014-03-23T00:00:00+00:00"
-aliases = [
-    "/2014/quick-tips-for-problems-with-windows-store-and-windows-8-apps/"
-]
 +++
 
 These are a few quick tips for when you're experiencing problems with the Windows Store in Windows 8(.1)/9 and opening apps in Windows 8(.1)/9.
