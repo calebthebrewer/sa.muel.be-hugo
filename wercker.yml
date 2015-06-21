@@ -1,6 +1,15 @@
 box: debian
 build:
   steps:
+    - script:
+        name: install git
+        code: |
+          sudo apt-get update && sudo apt-get install git -y
+    - script:
+        name: initialize git submodules
+        code: |
+            cd ..
+            git submodule update --init --recursive
     - arjen/hugo-build:
         version: "0.14"
         theme: crisp
