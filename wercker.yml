@@ -7,10 +7,7 @@ deploy:
     - script:
         name: install git
         code: |
-          sudo apt-get update
-          sudo apt-get install git -y
+          sudo apt-get update && sudo apt-get install git -y
     - lukevivier/gh-pages:
         token: $GIT_TOKEN
-        domain: sa.muel.be
         basedir: public
-        repo: SamuelDebruyn/samueldebruyn.github.io
