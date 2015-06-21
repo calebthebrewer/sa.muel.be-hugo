@@ -1,11 +1,14 @@
 box: debian
-services: 
-    - switchback/git-debian
 build:
   steps:
     - arjen/hugo-build
 deploy:
   steps:
+    - script:
+        name: install git
+        code: |
+          sudo apt-get update
+          sudo apt-get install git -y
     - lukevivier/gh-pages:
         token: $GIT_TOKEN
         domain: sa.muel.be
