@@ -1,0 +1,8 @@
+baseurl = "https://sa.muel.be"
+languageCode = "en-us"
+title = "Samuel Debruyn"
+paginate = 7
+theme = "crisp"
+
+[author]
+    name = "Samuel Debruyn"
