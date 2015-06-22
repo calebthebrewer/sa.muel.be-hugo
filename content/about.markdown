@@ -1,5 +1,6 @@
 +++
 title = "About me"
+description = "A short biography of Samuel Debruyn"
 +++
 
 ## Who am I?
