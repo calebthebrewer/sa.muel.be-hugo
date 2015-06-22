@@ -77,5 +77,7 @@
 
             {{ partial "follow.html" . }}
             {{ partial "navigation.html" . }}
-            <gcse:search></gcse:search>
+            
+            <gcse:searchbox-only resultsUrl="{{ .Site.BaseURL }}search/"></gcse:searchbox-only>
+            
         </header>
