@@ -1,4 +1,4 @@
-baseurl = "http://sa.muel.be/"
+baseurl = "http://thuis.sa.muel.be:44888/"
 languageCode = "en-us"
 title = "Samuel Debruyn"
 paginate = 7
@@ -7,7 +7,6 @@ theme = "crisp"
 [params]
     twitter = "SamuelDebruyn"
     description = "personal website and blog of Samuel Debruyn"
-    ga = "UA-51718684-1"
 
 [permalinks]
     post = "/:year/:title/"
