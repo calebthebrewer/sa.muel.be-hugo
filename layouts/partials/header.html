@@ -78,6 +78,6 @@
             {{ partial "follow.html" . }}
             {{ partial "navigation.html" . }}
             
-            <gcse:searchbox-only resultsUrl="{{ .Site.BaseURL }}search/"></gcse:searchbox-only>
+            <gcse:searchbox-only enableAutoComplete="true" resultsUrl="{{ .Site.BaseURL }}search/"></gcse:searchbox-only>
             
         </header>
