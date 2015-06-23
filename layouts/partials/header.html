@@ -115,6 +115,8 @@
             {{ partial "follow.html" . }}
             {{ partial "navigation.html" . }}
             
-            <gcse:searchbox-only enableAutoComplete="true" resultsUrl="{{ .Site.BaseURL }}search/"></gcse:searchbox-only>
+            <form class="uk-search" action="{{ .Site.BaseURL }}search/">
+                <input class="uk-search-field" id="q" name="q" type="search" placeholder="search..." />
+            </form>
             
         </header>
