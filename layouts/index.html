@@ -8,4 +8,22 @@
 
     	{{ partial "pagination.html" $paginator }}
 		</main>
+        
+<script type="application/ld+json">
+{ 
+    "@context": "http://schema.org",
+    "@type": "Blog",
+    "url": "{{ .Site.BaseURL }}",
+    "about": "{{ .Site.Params.description }}",
+    "name": "{{ .Site.Title }}",
+    "image": "{{ .Site.BaseURL }}avatar.jpg",
+    "headline": "{{ .Title }}",
+    "educationalUse": "research",
+    "author": {
+        {{ template "author-schema.html" . }}
+    },
+    "dateModified": "{{ .Site.LastChange | dateFormat "2006-01-02" }}"
+}
+</script>
+        
 {{ partial "footer.html" . }}

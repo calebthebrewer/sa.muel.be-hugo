@@ -5,7 +5,19 @@
 <article id="{{ .Slug }}" class="{{ .Type }}">
     <h1 class="post-title">{{ .Title }}</h1>
     {{ .Content }}
-</article>  
+</article>
 
 </main>
+
+{{ if eq .Title "About me" }}
+
+<script type="application/ld+json">
+    { 
+        "@context": "http://schema.org",
+        {{ template "author-schema.html" . }}
+    }
+</script>
+    
+{{ end }}
+
 {{ partial "footer.html" . }}
