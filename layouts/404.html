@@ -5,9 +5,9 @@
     <h1 class="post-title">Oops...</h1>
     <p>This page mysteriously disappeared. So uhm… I only see 3 options for you:</p>
      <ol>
-       <li>Check the URL you entered in the address bar and correct it if necessary</li>
-       <li><a href="https://twitter.com/intent/tweet?text=%40SamuelDebruyn%20This%20page%20on%20your%20website%20seems%20to%20be%20missing%3A" target="_blank">Tweet</a> or <a href="mailto:s@muel.be?subject=404%20on%20website">mail</a> me to let me know this link doesn’t work (anymore)</li>
-       <li>Get a jetpack and take off</li>
+       <li>Check the URL you entered in the address bar and correct it if necessary.</li>
+       <li><a id="tweeterror" href="https://twitter.com/intent/tweet?text=%40{{ .Site.Params.twitter }}%20This%20page%20on%20your%20website%20seems%20to%20be%20missing%3A" target="_blank">Tweet</a> or <a id="mailerror" href="mailto:{{ .Site.Params.email }}?subject=404%20on%20website&body=The%20following%20URL%20gives%20a%20HTTP%20404%20(Not%20Found)%20error%3A%20">mail</a> me to let me know this link doesn’t work (anymore).</li>
+       <li>Get a jetpack and take off.</li>
      </ol>
      <p style="text-align: center;">
          <img style="width: 200px;" src="{{ .Site.BaseURL }}img/404.png" alt="jetpack meme" />

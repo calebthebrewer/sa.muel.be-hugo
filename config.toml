@@ -7,6 +7,7 @@ theme = "crisp"
 [params]
     twitter = "SamuelDebruyn"
     description = "personal website and blog of Samuel Debruyn"
+    email = "s@muel.be"
     ga = "UA-51718684-1"
 
 [permalinks]
@@ -14,6 +15,7 @@ theme = "crisp"
 
 [author]
     name = "Samuel Debruyn"
+    twitter = "SamuelDebruyn"
     email = "s@muel.be"
     birthDate = "1992-04-11"
     familyName = "Debruyn"
