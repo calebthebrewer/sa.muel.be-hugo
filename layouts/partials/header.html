@@ -71,22 +71,23 @@
         <link href="{{.RSSLink}}" rel="alternate" type="application/rss+xml" title="{{ if ne .URL "/" }}{{ .Title }} &middot; {{ end }}{{ .Site.Title }}" />
     {{end}}
         <link rel="canonical" href="{{ .Permalink }}" />
-
+    
     {{ if .IsPage }}
-    <script type="application/ld+json">
-    { 
-        "@context": "http://schema.org",
-        "@type": "Article",
-        "headline": "{{ .Title }}",
-        "author": {
-            "@type": "Person",
-            "name": "{{ .Site.Author.name }}"
-        },
-        "datePublished": "{{ .Date.Format "2006-01-02" }}",
-        "description": "{{ .Description }}",
-        "wordCount": {{ .WordCount }}
-    }
-    </script>
+        {{ if eq .Type "post" }}
+            <script type="application/ld+json">
+            { 
+                "@context": "http://schema.org",
+                "@type": "Article",
+                "headline": "{{ .Title }}",
+                "author": {
+                    {{ template "author-schema.html" . }}
+                },
+                "datePublished": "{{ .Date.Format "2006-01-02" }}",
+                "description": "{{ .Description }}",
+                "wordCount": {{ .WordCount }}
+            }
+            </script>
+        {{ end }}
     {{ end }}
     
     {{ partial "criticalpath.html" . }}
