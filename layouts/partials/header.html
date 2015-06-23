@@ -72,19 +72,23 @@
     {{end}}
         <link rel="canonical" href="{{ .Permalink }}" />
     
-    {{ if .IsPage }}
+    {{ if and (.IsPage) }}
         {{ if eq .Type "post" }}
             <script type="application/ld+json">
             { 
                 "@context": "http://schema.org",
-                "@type": "Article",
+                "@type": "BlogPosting",
                 "headline": "{{ .Title }}",
+                "name": "{{ .Title }}",
                 "author": {
                     {{ template "author-schema.html" . }}
                 },
                 "datePublished": "{{ .Date.Format "2006-01-02" }}",
-                "description": "{{ .Description }}",
-                "wordCount": {{ .WordCount }}
+                {{ if .Description }}"description": "{{ .Description }}",{{ end }}
+                "wordCount": {{ .WordCount }},
+                "articleSection": "{{ if .Section }}{{ .Section }}{{ else }}{{ .Type }}{{ end }}",
+                "timeRequired": "0:{{ .ReadingTime  }}:0",
+                "url": "{{ .Permalink | safeHTML }}"
             }
             </script>
         {{ end }}
