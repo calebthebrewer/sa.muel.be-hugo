@@ -27,7 +27,7 @@
                 });
               {{ end }}
               {{ if and (.IsPage) (ne .Title "About me") }}
-                var isMobile = window.matchMedia("only screen and (max-width: 320px)");
+                var isMobile = window.matchMedia("only screen and (max-width: 800px)");
                 if(isMobile.matches) {
                     $("html, body").animate({scrollTop: $('#content').offset().top }, 1000);
                 }
