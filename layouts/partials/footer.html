@@ -26,6 +26,12 @@
                     $("#mailerror").attr("href", "mailto:{{ .Site.Params.email }}?subject=404%20on%20website&body=This%20page%20on%20your%20website%20seems%20to%20be%20missing%3A%20" + encodeURIComponent(window.location.href));
                 });
               {{ end }}
+              {{ if and (.IsPage) (ne .Title "About me") }}
+                var isMobile = window.matchMedia("only screen and (max-width: 320px)");
+                if(isMobile.matches) {
+                    $("html, body").animate({scrollTop: $('#content').offset().top }, 1000);
+                }
+              {{ end }}
           }});
         }
       });
@@ -53,6 +59,6 @@
         s.parentNode.insertBefore(gcse, s);
       })();
     </script>
-
+    
 	</body>
 </html>
