@@ -12,6 +12,7 @@ theme = "crisp"
 
 [permalinks]
     post = "/:year/:title/"
+    addendum = "/addendum/:year/:title/"
 
 [author]
     name = "Samuel Debruyn"
