@@ -60,11 +60,15 @@ The folder *upgrade* in *wp-content* is used by WordPress' built-in updater and 
 
 ### uploads and other folders
 
-Next up: search every other folder in *wp-content* for PHP files and delete files if you think they shouldn't be there. I suggest doing a case insensitive search for _*.php_ and _*.htaccess_ and carefully inspecting the results.
+Next up: search every other folder in *wp-content* for PHP and server configuration files and delete files if you think they shouldn't be there. I suggest doing a case insensitive search for _*.php_ and _.htaccess_ and carefully inspecting the results.
 
-	find /path/to/wordpress/wp-content/uploads/ -iname "*.php" -type f
+	find /path/to/wordpress/wp-content/uploads/ -iname "*.php" -or -iname ".htaccess"
 	
+You probably shouldn't have any PHP or .htaccess files in *wp-content/uploads/someyear/*.
 
+Finally search all the remaing files for typical code injections. PHP injections usually contain the functions *eval* and *base64_decode*
+
+	egrep 'eval(|decode(' -r -H /path/to/wordpress/wp-content/
 
 ## Search and delete infections in your database
 
