@@ -1,7 +1,7 @@
 baseurl = "http://sa.muel.be/"
 languageCode = "en-us"
 title = "Samuel Debruyn"
-paginate = 8
+paginate = 7
 theme = "crisp"
 
 [params]
