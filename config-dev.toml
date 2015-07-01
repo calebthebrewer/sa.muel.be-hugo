@@ -1,8 +1,9 @@
 baseurl = "http://thuis.sa.muel.be:44888/"
 languageCode = "en-us"
 title = "Samuel Debruyn"
-paginate = 8
+paginate = 7
 theme = "crisp"
+builddrafts = true
 
 [params]
     twitter = "SamuelDebruyn"
