@@ -66,7 +66,7 @@ Next up: search every other folder in *wp-content* for PHP and server configurat
 	
 You probably shouldn't have any PHP or .htaccess files in *wp-content/uploads/someyear/*.
 
-Finally search all the remaing files for typical code injections. PHP injections usually contain the functions *eval* and *base64_decode*
+Finally search all the remaing files for typical code injections. PHP injections usually contain the functions *eval* and *base64_decode*.
 
 	egrep 'eval(|decode(' -r -H /path/to/wordpress/wp-content/
 
