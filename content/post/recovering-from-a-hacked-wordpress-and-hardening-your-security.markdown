@@ -50,7 +50,7 @@ If you're not on the latest version of WordPress, then update ASAP. I'd recommen
 
 In this step we're going to restore the original theme and plugin files like we did a with the original WordPress files. Download the [themes](https://wordpress.org/themes/) and [plugins](https://wordpress.org/plugins/) from wordpress.org or from the website of the publisher of the plugin or theme (for premium/payed versions). All you need to do is unpack the files into their respective directories in *wp-content/themes* and *wp-content/plugins*. Make sure there are no other files than the ones you just replaced in both of these folders.
 
-NB: some plugins (e.g. plugins containing [dropins](http://wpengineer.com/2500/wordpress-dropins/)) like [WP Super Cache](https://wordpress.org/plugins/wp-super-cache/) also put PHP files in your *wp-content* directory.
+NB: some plugins (e.g. plugins containing [drop-ins](http://wpengineer.com/2500/wordpress-dropins/)) like [WP Super Cache](https://wordpress.org/plugins/wp-super-cache/) also put PHP files in your *wp-content* directory.
 
 ## Search and delete infections in your files
 
@@ -72,7 +72,7 @@ Next up: search every other folder in *wp-content* for PHP and server configurat
 	
 You probably shouldn't have any PHP or .htaccess files in *wp-content/uploads/someyear/*.
 
-Finally search all the remaing files for typical code injections. PHP injections usually contain the functions `eval` and `base64_decode`.
+Finally search all the remaining files for typical code injections. PHP injections usually contain the functions `eval` and `base64_decode`.
 
 	egrep 'eval(|decode(' -r -H /path/to/wordpress/wp-content/
 
