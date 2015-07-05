@@ -34,6 +34,10 @@ Download [a fresh copy of the version of WordPress](https://wordpress.org/downlo
 
 Delete the folders *wp-content/cache* and *wp-content/plugins/widgets*. They will be automatically recreated.
 
+## Regenerate salts and hashes
+
+The *wp-config.php* file contains a few hashes and salts to make sure that your cookies and sessions are unique and secure. As these could have been compromised, it's **absolutely necessary** to regenerate them. Open your *wp-config.php* file in a text editor and overwrite your new hashes with new ones. WordPress offers [an online generator] so you can easily copy and paste them.
+
 ## Upgrade to the latest version
 
 If you're not on the latest version of WordPress, then update ASAP. I'd recommend using [these extended instructions](https://codex.wordpress.org/Upgrading_WordPress_-_Extended_Instructions) instead of the built-in updater, but the built-in updater should be fine for most infected websites.
@@ -72,7 +76,21 @@ Finally search all the remaing files for typical code injections. PHP injections
 
 ## Search and delete infections in your database
 
+While most infections are usually to be found in the files, hackers could also insert executable and obfuscated code into your database. Most often these are XSS injections and WordPress should protect you against them. Still, it wouldn't hurt to scan your posts and comments for injected code.
+
+The easiest way is to connect to your database right away using something like the previously mentioned phpMyAdmin tool. Login, open the database and go to the SQL page so you can run some SQL commands. The select statements below will show you the posts and comments containing common injections. Use a DELETE query (be careful) or the phpMyAdmin GUI to completely delete the found posts and comments.
+
+# TODO: SELECT statements and links
+
 ## Using *Exploit Scanner* and *Sucuri Security* to detect further infections
+
+Most code injections should be gone by now, but there are a few WordPress plugins available to detect everything that's left.
+
+[Exploit Scanner] scans your files for possible hidden infections. Its options allow you to also scan for iframes etc., but they cause a lot of false negatives.
+
+[Sucuri Security] is a plugin I'd really recommend for any WordPress installation, whether you were hacked or not. The plugin allows you to automatically scan for changed files, notify you about any administrative action, easily reinstall every plugin and theme after a hack...
+
+Take advantage of all possibilities of the free versions of both of them. They will make sure that your WordPress is clean and stays clean.
 
 ## Restoring your website
 
