@@ -48,7 +48,7 @@ If you're not on the latest version of WordPress, then update ASAP. I'd recommen
 
 ## Restore the original themes and plugins
 
-In this step we're going to restore the original theme and plugin files like we did a with the original WordPress files. Download the [themes](https://wordpress.org/themes/) and [plugins](https://wordpress.org/plugins/) from wordpress.org or from the website of the publisher of the plugin or theme (for premium/payed versions). All you need to do is unpack the files into their respective directories in *wp-content/themes* and *wp-content/plugins*. Make sure there are no other files than the ones you just replaced in both of these folders.
+In this step we're going to restore the original theme and plugin files like we did with the original WordPress files. Download the [themes](https://wordpress.org/themes/) and [plugins](https://wordpress.org/plugins/) from wordpress.org or from the website of the publisher of the plugin or theme (for premium/payed versions). All you need to do is unpack the files into their respective directories in *wp-content/themes* and *wp-content/plugins*. Make sure there are no other files than the ones you just replaced in both of these folders.
 
 NB: some plugins (e.g. plugins containing [drop-ins](http://wpengineer.com/2500/wordpress-dropins/)) like [WP Super Cache](https://wordpress.org/plugins/wp-super-cache/) also put PHP files in your *wp-content* directory.
 
