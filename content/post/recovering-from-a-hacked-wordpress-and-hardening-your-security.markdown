@@ -1,6 +1,5 @@
 +++
-date = "2015-06-28T12:38:45+02:00"
-draft = true
+date = "2015-07-06T14:14:32+02:00"
 title = "Recovering from a hacked WordPress"
 +++
 
