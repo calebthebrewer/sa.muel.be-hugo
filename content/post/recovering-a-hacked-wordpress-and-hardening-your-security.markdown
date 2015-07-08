@@ -1,6 +1,9 @@
 +++
 date = "2015-07-06T14:14:32+02:00"
-title = "Recovering from a hacked WordPress"
+title = "Recovering a hacked WordPress"
+aliases = [
+        "2015/recovering-from-a-hacked-wordpress/"
+    ]
 +++
 
 ## Introduction
@@ -13,7 +16,7 @@ So, your website is hacked, what now? Let's go through the process of making sur
 
 In this first part you'll recover from a hack. In a second part you'll learn how to harden the security. I'll publish [the second part](/2015/hardening-your-wordpress-security/) a few weeks after the first part.
 
-This post is meant to be exhaustive and clear. If you have any suggestions or feel like something is missing or unclear, [*please* let me know](mailto:s@muel.be?subject=Suggestions%20for%20the%20post%20about%20recovering%20from%20a%20Wordpress%20hack).
+This post is meant to be exhaustive and clear. If you have any suggestions or feel like something is missing or unclear, [*please* let me know](mailto:s@muel.be?subject=Suggestions%20for%20the%20post%20about%20recovering%20a%20Wordpress%20hack).
 
 The WordPress version I used to write this post is 4.2.2.
 
