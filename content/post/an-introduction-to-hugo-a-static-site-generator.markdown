@@ -11,7 +11,7 @@ What makes a good blogging platform really good? Well, that depends on the blogg
 
 ## Jekyll
 
-A static site generator like [Jekyll](http://jekyllrb.com) fulfills (almost) all my needs as a programmer/blogger:
+A static site generator like [Jekyll](http://jekyllrb.com) fulfils (almost) all my needs as a programmer/blogger:
 
 * posts are written in [Markdown](http://daringfireball.net/projects/markdown/), Textile, HTML...
 * you don't need to setup a database and any simple web server will do the job since all you have to host is a simple, static website
@@ -32,7 +32,7 @@ The one that caught my attention was [hugo](http://gohugo.io). It has all the go
 
 The process of creating a new website is very similar to Jekyll. The `hugo` command literally explains itself (`hugo help`) and the [documentation](http://gohugo.io/overview/introduction/) on its website should suffice for most users.
 
-I've succesfully migrated my [Jekyll blog](https://github.com/SamuelDebruyn/samueldebruyn.github.io/tree/5f5719a9d4519f8fbd4cdfffa2a10b3f066401ef) to [hugo](https://github.com/SamuelDebruyn/sa.muel.be-hugo) and haven't regretted it ever since.
+I've successfully migrated my [Jekyll blog](https://github.com/SamuelDebruyn/samueldebruyn.github.io/tree/5f5719a9d4519f8fbd4cdfffa2a10b3f066401ef) to [hugo](https://github.com/SamuelDebruyn/sa.muel.be-hugo) and haven't regretted it ever since.
 
 ## Disadvantages
 
