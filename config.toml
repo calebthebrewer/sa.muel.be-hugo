@@ -9,6 +9,7 @@ theme = "crisp"
     description = "personal website and blog of Samuel Debruyn"
     email = "s@muel.be"
     ga = "UA-51718684-1"
+    hostname = "sa.muel.be"
 
 [permalinks]
     post = "/:year/:title/"
