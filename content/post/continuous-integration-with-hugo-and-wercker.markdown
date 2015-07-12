@@ -33,43 +33,43 @@ Wercker simplifies CI a lot and relies on [Docker](http://docker.com) for it's b
 1. Next, edit your app settings and create a custom deploy target including a protected environment variable called `GIT_TOKEN`.
 1. Finally add a file called *wercker.yml* to your repository with the code below. Change it to fit your needs.
 
-	box: debian
-	build:
-	  steps:
-	    - script:
-	        name: install git
-	        code: |
-	          apt-get update && apt-get install git -y
-	    - script:
-	        name: initialize git submodules
-	        code: |
-	            git submodule update --init --recursive
-	    - arjen/hugo-build:
-	        version: "0.14"
-	        theme: crisp
-	deploy:
-	  steps:
-	    - script:
-	        name: install git
-	        code: |
-	          apt-get update && apt-get install git -y
-	    - leipert/git-push:
-	        gh_oauth: $GIT_TOKEN
-	        basedir: public
-	        clean_removed_files: true
-	        branch: master
-	        repo: SamuelDebruyn/samueldebruyn.github.io
-	        gh_pages_domain: sa.muel.be
+		box: debian
+		build:
+		  steps:
+		    - script:
+		        name: install git
+		        code: |
+		          apt-get update && apt-get install git -y
+		    - script:
+		        name: initialize git submodules
+		        code: |
+		            git submodule update --init --recursive
+		    - arjen/hugo-build:
+		        version: "0.14"
+		        theme: crisp
+		deploy:
+		  steps:
+		    - script:
+		        name: install git
+		        code: |
+		          apt-get update && apt-get install git -y
+		    - leipert/git-push:
+		        gh_oauth: $GIT_TOKEN
+		        basedir: public
+		        clean_removed_files: true
+		        branch: master
+		        repo: SamuelDebruyn/samueldebruyn.github.io
+		        gh_pages_domain: sa.muel.be
 
-Obviously, you have to change the following variables:
-
-* `version`: the hugo version you use
-* `theme`: the theme you use
-* `branch`: the branch on GitHub Pages you wish to publish on (should be `master` for personal/organization pages and `gh-pages` for project pages)
-* `repo`: the repository you wish to publish your pages in (should be `username/username.github.io` for personal/organization pages and `username/project-repo` for project pages)
-* `gh_pages_domain`: a custom CNAME (optional, [read more](https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages/))
-
-Push a commit with that file and Wercker should happily start building and deploying your code!
+	Obviously, you have to change the following variables:
+	
+	* `version`: the hugo version you use
+	* `theme`: the theme you use
+	* `branch`: the branch on GitHub Pages you wish to publish on (should be `master` for personal/organization pages and `gh-pages` for project pages)
+	* `repo`: the repository you wish to publish your pages in (should be `username/username.github.io` for personal/organization pages and `username/project-repo` for project pages)
+	* `gh_pages_domain`: a custom CNAME (optional, [read more](https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages/))
+	
+	Push a commit with that file and Wercker should happily start building and deploying your code!
 
 ### A few examples
 
