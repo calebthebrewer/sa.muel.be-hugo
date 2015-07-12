@@ -13,7 +13,7 @@ As I recently switched from Jekyll to [hugo](http://gohugo.io), I needed a new w
 
 ## New to CI?
 
-Continuous integration, or CI, means that your code is automatically built, tested and/or deployed after each push. Everytime you push some commits to a remote repository, the code in that repository is being built.
+Continuous integration, or CI, means that your code is automatically built, tested and/or deployed after each push. Every time you push some commits to a remote repository, the code in that repository is being built.
 
 I usually have a branch called *develop* to which I push fresh code. Then a CI tool checks if that code builds properly and if it does, I merge it to my *master* branch. It's a lot like [Git Flow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow).
 
@@ -25,7 +25,7 @@ You could setup a CI tool to build your code after every push on every branch an
 
 I used to use [Travis](http://travis-ci.org) for all my CI needs, but then I came across [Wercker](http://wercker.com) in the [hugo docs](http://gohugo.io/tutorials/automated-deployments/).
 
-Wercker simplifies CI a lot and relies on [Docker](http://docker.com) for it's build environments. It also allows you to deploy your builds to different environments (e.g. production, staging, testing...) Hugo has a guide about how to set it up, but it's a little bit outdated. I might just send a pull request with an update in a few days. Wercker also has a lot of documentation. So with the examples below, you should be able to easily walk through the setup.
+Wercker simplifies CI a lot and relies on [Docker](http://docker.com) for its build environments. It also allows you to deploy your builds to different environments (e.g. production, staging, testing...) Hugo has a guide about how to set it up, but it's a little bit outdated. I might just send a pull request with an update in a few days. Wercker also has a lot of documentation. So with the examples below, you should be able to easily walk through the setup.
 
 ### Setting it up
 
