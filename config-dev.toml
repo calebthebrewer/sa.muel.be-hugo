@@ -8,6 +8,8 @@ builddrafts = true
 [params]
     twitter = "SamuelDebruyn"
     description = "personal website and blog of Samuel Debruyn"
+    email = "s@muel.be"
+    hostname = "sa.muel.be"
 
 [permalinks]
     post = "/:year/:title/"

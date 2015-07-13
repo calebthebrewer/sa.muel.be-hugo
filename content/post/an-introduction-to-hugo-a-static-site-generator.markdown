@@ -6,7 +6,7 @@ title = "An introduction to hugo, a static site generator"
 
 ## A good blogging platform
 
-What makes a good blogging platform really good? Well, that depends on the blogger. Programmers would need different features than make-up bloggers. As a programmer I need to be able to easily integrate pieces of code with syntax highlighting in my posts and I'd prefer writing them in my favourite text/code editor instead of in a WYSIWYG editor.
+What makes a good blogging platform really good? Well, that depends on the blogger. Programmers would need different features than make-up bloggers. As a programmer, I need to be able to easily integrate pieces of code with syntax highlighting in my posts and I'd prefer writing them in my favourite text/code editor instead of in a WYSIWYG editor.
 
 ## Jekyll
 
