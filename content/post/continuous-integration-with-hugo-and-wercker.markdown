@@ -1,6 +1,5 @@
 +++
-date = "2015-08-07T21:39:32+02:00"
-draft = true
+date = "2015-07-14T12:45:28+02:00"
 title = "Continuous integration with hugo and Wercker"
 
 +++
@@ -31,7 +30,7 @@ Wercker simplifies CI a lot and relies on [Docker](http://docker.com) for its bu
 
 1. Create a new Wercker app based on the repository containing your hugo source code and give Wercker access rights. You can leave everything else on the default settings. If you'd like a badge showing your build status, make sure your app is public.
 1. Next, edit your app settings and create a custom deploy target including a protected environment variable called `GIT_TOKEN`.
-1. Finally add a file called *wercker.yml* to your repository with the code below. Change it to fit your needs.
+1. Finally, add a file called *wercker.yml* to your repository with the code below. Change it to fit your needs.
 
 		box: debian
 		build:
