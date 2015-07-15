@@ -1,6 +1,5 @@
 +++
-date = "2015-07-13T15:35:28+02:00"
-draft = true
+date = "2015-07-15T13:21:45+02:00"
 title = "Wercker step to validate hugo themes"
 +++
 
