@@ -1,0 +1,8 @@
+<div class="col span_1_of_3 portfoliobox">
+	{{ if .Params.image }}
+		<a href="{{.Permalink}}"><img src="{{.Params.image}}" alt="screenshot of {{.Title}}" /></a>
+	{{else}}
+		<p>{{substr .Summary 0 120}}{{if .Truncated}}...{{end}}</p>
+	{{end}}
+	<h4><a href="{{.Permalink}}">{{ .Title }}</a></h4>
+</div>

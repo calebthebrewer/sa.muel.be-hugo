@@ -1,0 +1,30 @@
+{{ partial "header.html" . }}
+
+<main id="content">
+{{ $paginator := .Paginator 6 }}
+	<h1 class="post-title">Portfolio</h1>
+	
+	{{ $total := $paginator.NumberOfElements }}
+	{{ range $index, $page := $paginator.Pages }}
+        	{{ $col := add (mod $index 3) 1 }}
+			{{ if eq $col 1 }}
+				<div class="section group"><!-- new row -->
+					{{ .Render "li" }}
+					{{ if eq (add $index 1) $total }}
+						</div><!-- end of row -->
+					{{ end }}
+			{{ else if eq $col 2 }}
+					{{ .Render "li" }}
+				{{ if eq (add $index 1) $total }}
+					</div><!-- end of row -->
+				{{ end }}
+			{{ else if eq $col 3 }}
+					{{ .Render "li" }}
+				</div><!-- end of row -->
+			{{ end }}
+    {{ end }}
+	
+    {{ partial "pagination.html" $paginator }}
+</main>
+
+{{ partial "footer.html" . }}
