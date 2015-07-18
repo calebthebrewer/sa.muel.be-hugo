@@ -1,0 +1,19 @@
+{{ $baseurl := .Site.BaseURL }}
+{{ partial "header.html" . }}
+<main id="content">
+
+<article class="{{ .Type }}">
+    <h1 class="post-title">Portfolio: {{ .Title }}</h1>
+    <div class="portfolio-meta">
+        {{ with .Params.technology }}<span class="technology"><span class="portfolio-tag">Technology</span>: {{.}}</span>{{end}}
+        {{ with .Params.link }}<span class="link"><a href="{{.}}" target="_blank">Link</a></span>{{end}}
+        {{ if .Params.image }}
+            <span class="screenshot"><span class="portfolio-tag">Screenshot</span>:<br/><img src="{{.Params.image}}" alt="screenshot of {{.Title}}" /></span>
+        {{end}}
+    </div>
+    {{ .Content }}
+</article>
+
+</main>
+
+{{ partial "footer.html" . }}
