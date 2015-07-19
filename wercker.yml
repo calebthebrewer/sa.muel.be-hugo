@@ -1,4 +1,4 @@
-box: kalabox/git
+box: switchback/git-debian
 build:
   steps:
     - script:
