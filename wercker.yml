@@ -1,10 +1,6 @@
-box: debian
+box: switchback/git-debian
 build:
   steps:
-    - script:
-        name: install git
-        code: |
-          apt-get update && apt-get install git -y
     - script:
         name: initialize git submodules
         code: |
@@ -14,10 +10,6 @@ build:
         theme: crisp
 deploy:
   steps:
-    - script:
-        name: install git
-        code: |
-          apt-get update && apt-get install git -y
     - leipert/git-push:
         gh_oauth: $GIT_TOKEN
         basedir: public
