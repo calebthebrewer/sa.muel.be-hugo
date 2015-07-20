@@ -5,7 +5,7 @@ description = "A short biography of Samuel Debruyn"
 
 ## Who am I?
 
-Hi there, you can call me Sam. I am an IT student by day and software development tinkerer by night. I'll soon graduate so job offers are welcome. My resume is available on [LinkedIn](http://linkedin.com/in/samueldebruyn).
+Hi there, you can call me Sam. I am an IT student by day and software development tinkerer by night. I'll soon graduate so internships and job offers are welcome. My resume is available on [LinkedIn](http://linkedin.com/in/samueldebruyn).
 
 ## What do I do?
 

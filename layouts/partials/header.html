@@ -36,7 +36,14 @@
 
     {{ if and (.IsPage) (ne .Title "About me") }}
     
-        <meta name="twitter:card" content="summary" />
+        {{ if eq .Section "portfolio" }}
+            <meta name="twitter:card" content="summary_large_image" />
+            <meta name="twitter:image" content="{{ trim (print .Site.BaseURL) "/" }}{{ .Params.image }}" />
+            <meta property="og:image" content="{{ trim (print .Site.BaseURL) "/" }}{{ .Params.image }}" />
+         {{else}}   
+            <meta name="twitter:card" content="summary" />
+        {{end}}
+        
         <meta property="og:type" content="article" />
         <meta property="og:article:published_time" content="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}" />
         <meta property="og:article:section" content="{{ if .Section }}{{ .Section }}{{ else }}{{ .Type }}{{ end }}" />
