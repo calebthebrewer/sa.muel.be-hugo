@@ -2,7 +2,7 @@
 date = "2015-07-20T13:45:55+02:00"
 image = "/img/portfolio/bbgoeunapi.png"
 link = "http://mi4.sa.muel.be"
-technology = "PHP"
+technology = "web"
 title = "B&B Go Eun API"
 
 +++
