@@ -38,8 +38,8 @@
     
         {{ if eq .Section "portfolio" }}
             <meta name="twitter:card" content="summary_large_image" />
-            <meta name="twitter:image" content="{{ .Site.BaseURL }}{{ .Params.image }}" />
-            <meta property="og:image" content="{{ .Site.BaseURL }}{{ .Params.image }}" />
+            <meta name="twitter:image" content="{{ trim (print .Site.BaseURL) "/" }}{{ .Params.image }}" />
+            <meta property="og:image" content="{{ trim (print .Site.BaseURL) "/" }}{{ .Params.image }}" />
          {{else}}   
             <meta name="twitter:card" content="summary" />
         {{end}}
