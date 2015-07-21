@@ -3,6 +3,8 @@
 <main id="content">
 	<h1 class="post-title">Portfolio</h1>
 	
+	<p>This portfolio only includes <strong>finished projects</strong>. I have a lot more code repositories available on my <a href="https://github.com/SamuelDebruyn" target="_blank">GitHub profile</a>. That profile also includes <strong>contributions</strong> I made to community driven projects.</p>
+	
 	{{ range .Data.Pages.GroupByParam "technology" }}
 		<h2>{{ .Key | title }}</h2>
 		{{ $total := len .Pages }}
