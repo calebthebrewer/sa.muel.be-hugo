@@ -1,6 +1,10 @@
-box: switchback/git-debian
 build:
+  box: centurylink/ruby-base
   steps:
+    - script:
+        name: install git
+        code: |
+          apt-get update && apt-get install git -y
     - script:
         name: initialize git submodules
         code: |
@@ -8,7 +12,11 @@ build:
     - arjen/hugo-build:
         version: "0.14"
         theme: crisp
+    - kyleboyle/html-proofer-test:
+        version: "2.3.0"
+        basedir: public
 deploy:
+  box: switchback/git-debian
   steps:
     - leipert/git-push:
         gh_oauth: $GIT_TOKEN
