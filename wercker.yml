@@ -1,5 +1,6 @@
 box: switchback/git-debian
 build:
+  box: switchback/git-debian
   steps:
     - script:
         name: initialize git submodules
@@ -9,6 +10,7 @@ build:
         version: "0.14"
         theme: crisp
 deploy:
+  box: switchback/git-debian
   steps:
     - leipert/git-push:
         gh_oauth: $GIT_TOKEN
