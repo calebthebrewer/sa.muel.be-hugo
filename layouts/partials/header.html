@@ -36,7 +36,7 @@
 
     {{ if and (.IsPage) (ne .Title "About me") }}
     
-        {{ if eq .Section "portfolio" }}
+        {{ if and (eq .Section "portfolio") (isset .Params "image" ) }}
             <meta name="twitter:card" content="summary_large_image" />
             <meta name="twitter:image" content="{{ trim (print .Site.BaseURL) "/" }}{{ .Params.image }}" />
             <meta property="og:image" content="{{ trim (print .Site.BaseURL) "/" }}{{ .Params.image }}" />
