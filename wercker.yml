@@ -15,7 +15,7 @@ build:
     - kyleboyle/html-proofer-test:
         version: "2.3.0"
         basedir: public
-        arguments: --check-external-hash --verbose --only-4xx
+        arguments: --check-external-hash --only-4xx
 deploy:
   box: switchback/git-debian
   steps:
