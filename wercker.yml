@@ -1,6 +1,6 @@
 box: switchback/git-debian
 build:
-  box: switchback/git-debian
+  box: centurylink/ruby-base
   steps:
     - script:
         name: install git
