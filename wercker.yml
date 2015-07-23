@@ -10,7 +10,7 @@ build:
     - arjen/hugo-build:
         version: "0.14"
         theme: crisp
-    - samueldebruyn/minify:
+    - samueldebruyn/minify
     - kyleboyle/html-proofer-test:
         version: "2.3.0"
         basedir: public
