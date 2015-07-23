@@ -12,6 +12,9 @@ build:
     - arjen/hugo-build:
         version: "0.14"
         theme: crisp
+    - kyleboyle/html-proofer-test:
+        version: "2.3.0"
+        basedir: public
 deploy:
   box: switchback/git-debian
   steps:
