@@ -1,4 +1,3 @@
-box: switchback/git-debian
 build:
   box: centurylink/ruby-base
   steps:
