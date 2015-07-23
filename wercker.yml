@@ -15,6 +15,7 @@ build:
     - kyleboyle/html-proofer-test:
         version: "2.3.0"
         basedir: public
+        arguments: --check_external_hash --check_html --checks_to_ignore=blankMailToLink
 deploy:
   box: switchback/git-debian
   steps:
