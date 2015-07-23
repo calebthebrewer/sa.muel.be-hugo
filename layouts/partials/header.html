@@ -2,13 +2,13 @@
 <html lang="{{.Site.LanguageCode}}">
 
 {{ $isHomepage := (eq .Permalink (print .Site.BaseURL | safeHTML)) }}
-{{ $titleBase := (print " &middot; " .Site.Title | safeHTML) }}
+{{ $titleBase := (print " · " .Site.Title) }}
 {{ if $isHomepage }}
     {{ $.Scratch.Set "title" .Site.Title }}
 {{ else if eq .Title "Portfolios" }}
-    {{ $.Scratch.Set "title" (print "Portfolio" $titleBase | safeHTML) }}
+    {{ $.Scratch.Set "title" (print "Portfolio" $titleBase) }}
 {{else}}
-    {{ $.Scratch.Set "title" (print .Title $titleBase | safeHTML) }}
+    {{ $.Scratch.Set "title" (print .Title $titleBase) }}
 {{end}}
 
     <head>
@@ -137,5 +137,3 @@
             </form>
             
         </header>
-        
-        <script>console.log();</script>
