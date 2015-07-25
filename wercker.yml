@@ -14,7 +14,7 @@ build:
     - kyleboyle/html-proofer-test:
         version: "2.3.0"
         basedir: public
-        arguments: --check-external-hash --only-4xx --url-ignore /.*sa.muel.be.*/g
+        arguments: --check-external-hash --only-4xx --url-ignore '/https?:\/\/sa.muel.be.*/ig'
 deploy:
   box: switchback/git-debian
   steps:
