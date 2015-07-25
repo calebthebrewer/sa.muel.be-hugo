@@ -1,10 +1,8 @@
 build:
   box: centurylink/ruby-base
   steps:
-    - script:
-        name: install git
-        code: |
-          apt-get update && apt-get install git -y
+    - install-packages:
+        packages: git curl openjdk-7-jre
     - script:
         name: initialize git submodules
         code: |
@@ -12,6 +10,7 @@ build:
     - arjen/hugo-build:
         version: "0.14"
         theme: crisp
+    - samueldebruyn/minify
     - kyleboyle/html-proofer-test:
         version: "2.3.0"
         basedir: public
