@@ -1,5 +1,5 @@
 build:
-  box: centurylink/ruby-base
+  box: node
   steps:
     - install-packages:
         packages: git curl openjdk-7-jre build-essential
@@ -11,10 +11,6 @@ build:
         version: "0.14"
         theme: crisp
     - samueldebruyn/minify
-    - kyleboyle/html-proofer-test:
-        version: "2.3.0"
-        basedir: public
-        arguments: --check-external-hash --only-4xx
 deploy:
   box: switchback/git-debian
   steps:
