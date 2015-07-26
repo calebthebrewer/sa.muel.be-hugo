@@ -1,6 +1,5 @@
 +++
 date = "2015-07-26T22:23:17+02:00"
-draft = true
 image = "/img/portfolio/big-bad-wolf.png"
 link = "https://github.com/SamuelDebruyn/BigBadWolf"
 technology = "Windows Forms"
