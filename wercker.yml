@@ -5,9 +5,10 @@ build:
         name: initialize git submodules
         code: |
             git submodule update --init --recursive
-    - arjen/hugo-build:
-        version: "0.14"
-        theme: crisp
+    - script:
+        name: build with hugo
+        code: |
+            hugo -t crisp
     - samueldebruyn/minify
     - kyleboyle/html-proofer-test:
         version: "2.3.0"
