@@ -1,8 +1,6 @@
+box: samueldebruyn/hugo-build
 build:
-  box: centurylink/ruby-base
   steps:
-    - install-packages:
-        packages: git curl openjdk-7-jre build-essential
     - script:
         name: initialize git submodules
         code: |
@@ -16,7 +14,6 @@ build:
         basedir: public
         arguments: --check-external-hash --href-ignore /https?:\/\/sa.muel.be.*/ig
 deploy:
-  box: switchback/git-debian
   steps:
     - leipert/git-push:
         gh_oauth: $GIT_TOKEN
