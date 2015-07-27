@@ -13,7 +13,7 @@ build:
     - script:
         name: run html-proofer
         code: |
-            html-proofer public --check-external-hash --href-ignore /https?:\/\/sa.muel.be.*/ig
+            htmlproof public --check-external-hash --href-ignore /https?:\/\/sa.muel.be.*/ig
 deploy:
   steps:
     - leipert/git-push:
