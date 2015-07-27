@@ -10,10 +10,10 @@ build:
         code: |
             hugo -t crisp
     - samueldebruyn/minify
-    - kyleboyle/html-proofer-test:
-        version: "2.3.0"
-        basedir: public
-        arguments: --check-external-hash --href-ignore /https?:\/\/sa.muel.be.*/ig
+    - script:
+        name: run html-proofer
+        code: |
+            html-proofer public --check-external-hash --href-ignore /https?:\/\/sa.muel.be.*/ig
 deploy:
   steps:
     - leipert/git-push:
