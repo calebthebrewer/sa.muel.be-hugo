@@ -1,5 +1,5 @@
-box: samueldebruyn/hugo-build
 build:
+  box: samueldebruyn/hugo-build
   steps:
     - script:
         name: initialize git submodules
@@ -8,13 +8,13 @@ build:
     - script:
         name: build with hugo
         code: |
-            hugo -t crisp
+            hugo
     - samueldebruyn/minify
-    - script:
-        name: run html-proofer
-        code: |
-            htmlproof public --check-external-hash --href-ignore /https?:\/\/sa.muel.be.*/ig
+    - kyleboyle/html-proofer-test:
+        basedir: public
+        arguments: --check-external-hash --href-ignore /https?:\/\/sa.muel.be.*/ig
 deploy:
+  box: samueldebruyn/debian-git
   steps:
     - leipert/git-push:
         gh_oauth: $GIT_TOKEN
