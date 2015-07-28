@@ -1,22 +1,20 @@
+box: samueldebruyn/hugo-build
 build:
-  box: centurylink/ruby-base
   steps:
-    - install-packages:
-        packages: git curl openjdk-7-jre build-essential
     - script:
         name: initialize git submodules
         code: |
             git submodule update --init --recursive
-    - arjen/hugo-build:
-        version: "0.14"
-        theme: crisp
+    - script:
+        name: build with hugo
+        code: |
+            hugo -t crisp
     - samueldebruyn/minify
-    - kyleboyle/html-proofer-test:
-        version: "2.3.0"
-        basedir: public
-        arguments: --check-external-hash --href-ignore /https?:\/\/sa.muel.be.*/ig
+    - script:
+        name: run html-proofer
+        code: |
+            htmlproof public --check-external-hash --href-ignore /https?:\/\/sa.muel.be.*/ig
 deploy:
-  box: switchback/git-debian
   steps:
     - leipert/git-push:
         gh_oauth: $GIT_TOKEN
