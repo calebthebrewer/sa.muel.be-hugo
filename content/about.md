@@ -5,9 +5,11 @@ description = "A short biography of Samuel Debruyn"
 
 ## Who am I?
 
-Hi there, you can call me Sam. I am an IT student by day and software development tinkerer by night. I'll soon graduate so internships and job offers are welcome. My resume is available on [LinkedIn](http://linkedin.com/in/samueldebruyn).
+Hi there, you can call me Sam. I'm a C# .NET developer by day and software development tinkerer by night.
 
 ## What do I do?
+
+I'm finishing my IT studies at [Odisee](http://www.odisee.be/Odisee/Sections/Odisee-About-us.html) as an intern at [RealDolmen](http://realdolmen.be/en). My internship is about cross platform mobile app development with [Xamarin](http://xamarin.com/).
 
 When I'm not reading up on the newest programming languages, development frameworks etc. I'm probably busy playing with them. My interests lie in (RESTful) APIs and cross platform apps. I especially like building complete SaaS solutions.
 
