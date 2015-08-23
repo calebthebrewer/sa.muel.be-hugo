@@ -1,6 +1,5 @@
 +++
-date = "2015-07-28T15:36:56+02:00"
-draft = true
+date = "2015-08-23T22:30:51+02:00"
 title = "Hardening your WordPress security"
 
 +++
@@ -33,9 +32,11 @@ CloudFlare, the tool I mentioned above, offers free server-client SSL. It isn't 
 
 If you're on shared hosting, you don't have much to say about this, but you can still take measures to ensure your management portal access is safe. Use very strong passwords to manage your web server, make sure everything (PHP, MySQL, Apache...) is up to date, only allow database access from your web server (usually localhost)...
 
+Another perspective to look at this is securing access to your files. Store your backups in a safe location, make sure that the WordPress folders and files have the right permissions (this changes sometimes, take a look at the [official website](https://codex.wordpress.org/Changing_File_Permissions) to find out which permissions you should use).
+
 ## Use strong authentication and authorisation
 
-Use strong passwords, make sure your wp-config.php is only stored on the webserver itself, consider using [MFA](https://wordpress.org/plugins/wordpress-2-step-verification/)... There are a lot ways to make sure that it isn't too easy to get in.
+Use strong passwords, make sure your wp-config.php is only stored on the webserver itself, consider using [MFA](https://wordpress.org/plugins/wordpress-2-step-verification/)... There are a lot of ways to make sure that it isn't too easy to get in.
 
 ## Consider using a 3rd party email provider
 
@@ -47,17 +48,17 @@ Most hackers don't even want to hack your website itself. Usually they'll want t
 
 ## Uninstall plugins and themes you don't need
 
-If you don't necessarily need a plugin or theme, uninstall it completely. Don't even leave it deactived. Hackers can run code in deactived plugins without any hassle.
+If you don't necessarily need a plugin or theme, uninstall it completely. Don't even leave it deactivated. Hackers can run code in deactivated plugins without any hassle.
 
 ## Schedule security scans
 
-While [Exploit Scanner](https://wordpress.org/plugins/exploit-scanner/) is perfectly capable of scanning a WordPress installation for (possible) exploits, you can't use it to schedule automatic scans. [Sucuri Security](https://wordpress.org/plugins/sucuri-scanner/) is defintely a must-have for every WordPress website. You can schedule automatic scans for modified files, notifications for about everything that happens on your website, thorough measures to further harden your website's security...
+While [Exploit Scanner](https://wordpress.org/plugins/exploit-scanner/) is perfectly capable of scanning a WordPress installation for (possible) exploits, you can't use it to schedule automatic scans. [Sucuri Security](https://wordpress.org/plugins/sucuri-scanner/) is definitely a must-have for every WordPress website. You can schedule automatic scans for modified files, notifications for about everything that happens on your website, thorough measures to further harden your website's security...
 
 ## Log bad behaviour
 
 There's an awesome plugin called [Bad Behavior](https://wordpress.org/plugins/bad-behavior/) which logs malicious looking behaviour and notifies you if you want to. If you suspect a hacker is trying to get in, install this plugin. You can then use to automatically block some of his attempts.
 
-If you notice some brute force attacks on your *wp-login.php* page, consider installing [Limit Login Attempts](https://wordpress.org/plugins/limit-login-attempts/). You can finetune its settings so that it's not too hard on your users.
+If you notice some brute force attacks on your *wp-login.php* page, consider installing [Limit Login Attempts](https://wordpress.org/plugins/limit-login-attempts/). You can fine-tune its settings so that it's not too hard on your users.
 
 ## Change the defaults
 
