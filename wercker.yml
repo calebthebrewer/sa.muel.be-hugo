@@ -10,9 +10,6 @@ build:
         code: |
             hugo
     - samueldebruyn/minify
-    - kyleboyle/html-proofer-test:
-        basedir: public
-        arguments: --check-external-hash --href-ignore /https?:\/\/sa.muel.be.*/ig
 deploy:
   box: samueldebruyn/debian-git
   steps:
