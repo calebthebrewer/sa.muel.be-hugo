@@ -57,6 +57,10 @@ Installing and plugging in the Dell adapter I bought, gave me BSoDs and a lot of
 
 Sometimes the audio driver went berserk and the sound became very distorted. Disabling and enabling the Realtek HW audio codec usually fixed it temporarily, but it was finally fixed after installing a new version of the Realtek audio driver last week.
 
+#### Update
+
+This issue reappeared a few hours after publishing this post.
+
 ### Missing settings in the power management section of the control panel
 
 Dell offers a great utility called [Dell Command | Power](http://en.community.dell.com/techcenter/enterprise-client/w/wiki/7535.dell-command-power-manager) which you should definitely install if you own a recent Dell laptop. You can optimize various settings that avoid battery wear (e.g. optimize the charging algorithm for a laptop that is often plugged into the charger or keep the laptop extra cool).
