@@ -1,7 +1,7 @@
 +++
-date = "2015-08-24T07:40:34+02:00"
-draft = true
-title = "Experiences with using Windows 10 on a Dell XPS 13 (2015)"
+date = "2015-08-26T07:51:16+02:00"
+draft = false
+title = "Experiences with Windows 10 on a new Dell XPS 13 (2015)"
 
 +++
 
@@ -27,7 +27,7 @@ Usually, they ask you to sign in to a Microsoft account and offer you to restore
 
 ## The first boot
 
-The blurriness was back. About every non-modern app looked blurry. Probably driver issues, right? Dell's support site [says](http://www.dell.com/learn/us/en/19/campaigns/windows-upgrade-offer) that the XPS 13 is ready for Windows 10. Okay... But the driver section doesn't even have a graphics driver. I installed all the available Windows 10 drivers and some Windows 8 drivers which weren't available in the Windows 10 section. I found drivers for the Intel HD 5500 and some other Intel components on Intel's website and Realtek's website has Windows 10 drivers for SD card reader and the audio chip.
+The blurriness was back. About every non-modern app looked blurry. Probably driver issues, right? Dell's [support site](http://www.dell.com/learn/us/en/19/campaigns/windows-upgrade-offer) says that the XPS 13 is ready for Windows 10. Okay... But the driver section doesn't even have a graphics driver. I installed all the available Windows 10 drivers and some Windows 8 drivers which weren't available in the Windows 10 section. I found drivers for the Intel HD 5500 and some other Intel components on Intel's website and Realtek's website has Windows 10 drivers for SD card reader and the audio chip.
 
 The installation of the graphics driver failed miserably. In the final step of the installation my screen turned black, showing just a white mouse pointer. It stayed that way for more than 15 minutes. Although, after a reboot (had to press the power button for a few seconds), the driver seemed to be *correctly* installed.
 
