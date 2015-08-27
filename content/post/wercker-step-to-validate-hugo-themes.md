@@ -1,6 +1,7 @@
 +++
 date = "2015-07-15T13:21:45+02:00"
 title = "Wercker step to validate hugo themes"
+tags = ["CI", "hugo", "Wercker"]
 +++
 
 So last week, I created [a material design theme](/2015/material-lite-theme-for-hugo/) for [hugo](http://gohugo.io), a static site generator which I'm [quite fond of](/search/?q=hugo).

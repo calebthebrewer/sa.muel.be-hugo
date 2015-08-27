@@ -1,6 +1,7 @@
 +++
 date = "2015-07-25T17:01:17+02:00"
 title = "Wercker step to minify static resources"
+tags = ["CI", "Wercker"]
 +++
 
 I recently blogged a lot about [static websites](/2015/an-introduction-to-hugo-a-static-site-generator/) and [continuous integration](/2015/continuous-integration-with-hugo-and-wercker/). There was still one step missing in my continuous integration cycle: **minification**.

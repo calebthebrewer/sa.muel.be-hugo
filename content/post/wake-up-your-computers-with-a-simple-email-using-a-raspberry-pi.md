@@ -1,6 +1,7 @@
 +++
 date = "2013-12-22T00:00:00+00:00"
 title = "Wake up your computer(s) with a simple email using a Raspberry Pi"
+tags = ["Linux", "python"]
 +++
 
 ## Introduction

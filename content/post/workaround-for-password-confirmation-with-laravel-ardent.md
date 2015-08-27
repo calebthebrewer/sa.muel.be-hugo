@@ -1,9 +1,8 @@
 +++
 title = "Workaround for password confirmation with Laravel & Ardent"
 date = "2014-06-14T00:00:00+00:00"
-aliases = [
-        "2014/workaround-for-password-confirmation-with-laravel-ardent/"
-    ]
+aliases = ["2014/workaround-for-password-confirmation-with-laravel-ardent/"]
+tags = ["PHP", "laravel"]
 +++
 
 While I was working on a website made with Laravel and Ardent I had to validate a password confirmation field for a user registration. This will not work if you follow the standard documentation.

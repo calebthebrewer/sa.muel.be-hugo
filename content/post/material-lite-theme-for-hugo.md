@@ -1,6 +1,7 @@
 +++
 date = "2015-07-13T08:00:00+02:00"
 title = "Material-lite theme for hugo"
+tags = ["Google", "hugo"]
 +++
 
 Last week, [I wrote a post](/2015/an-introduction-to-hugo-a-static-site-generator/) about how awesome [hugo](http://gohugo.io) is and why I switched from Jekyll to hugo.

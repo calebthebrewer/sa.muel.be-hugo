@@ -1,6 +1,7 @@
 +++
 date = "2013-12-09T00:00:00+00:00"
 title = "Connecting Serviio with Telenet's Yelo TV"
+tags = ["DLNA"]
 +++
 
 ## Introduction
