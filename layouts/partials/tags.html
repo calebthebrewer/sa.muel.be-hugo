@@ -1,5 +1,8 @@
+<h6 class="sitetaglisttitle">Tags</h6>
 <ul class="sitetaglist">
-  {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
-    <li><a href="/tags/{{ $name | urlize }}">{{ $name }} ({{ .Count }})</a></li>
+  {{ range first 10 .Site.Taxonomies.tags.ByCount }}
+    {{ if ge .Count 3 }}
+      <li><a href="/tags/{{ .Name | urlize }}">{{ .Name }} ({{ .Count }})</a></li>
+    {{ end }}
   {{ end }}
 </ul>
