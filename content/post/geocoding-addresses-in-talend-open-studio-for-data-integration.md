@@ -1,6 +1,7 @@
 +++
 title = "Geocoding addresses in Talend Open Studio for Data Integration"
 date = "2015-04-18T00:00:00+00:00"
+tags = ["Talend", "Java"]
 +++
 
 Last week I had to geocode the addresses in a dataset using Talend. Geocoding is adding coordinates to addresses. This way you can easily visualize your data on a map.

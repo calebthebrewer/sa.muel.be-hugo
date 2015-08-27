@@ -1,6 +1,7 @@
 +++
 date = "2015-01-25T00:00:00+00:00"
 title = "Natively boot Windows 10 Technical Preview with a virtual HDD"
+tags = ["Windows"]
 +++
 
 A few days ago [Microsoft released a new build for Windows 10](https://insider.windows.com) and I wanted to give it a try. However, I didn't want to resize my partitions or overwrite my Windows 8.1 partition.

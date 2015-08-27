@@ -2,7 +2,7 @@
 date = "2015-08-26T07:51:16+02:00"
 draft = false
 title = "Experiences with Windows 10 on a new Dell XPS 13 (2015)"
-
+tags = ["Windows"]
 +++
 
 ## Ordering a new workhorse
