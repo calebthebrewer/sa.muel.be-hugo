@@ -261,6 +261,26 @@ h3.post-title
 	font-weight: 700!important;
 }
 
+.sitetaglist
+{
+	list-style-type: none;
+	display: block;
+	margin-left: 0;
+	text-align: center;
+	margin-bottom: 1.25em;
+	font-size: 0.8em;
+}
+
+.sitetaglist li
+{
+	display: inline;
+}
+
+.sitetaglisttitle
+{
+	margin-bottom: .3em;
+}
+
 h3.post-title>time
 {
 	font-family: "Lato",sans-serif;
@@ -276,6 +296,24 @@ h3.post-title>time
 .feature-star,.separator
 {
 	color: #ccc;
+}
+
+.taglist { color: #ccc }
+
+.taglist a {
+    background-color: #ccc;
+    color: #fff;
+    display: inline-block;
+    line-height: 1.5em;
+    padding: .3em .6em;
+    vertical-align: 20%;
+    font-size: .5em;
+    font-weight: 700!important;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    border-radius: .25em;
+    -moz-border-radius: .25em;
+    -webkit-border-radius: .25em;
 }
 
 #social-bar
@@ -316,11 +354,11 @@ footer a:hover
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 30px;
-	line-height: 40px;
+	width: 1.87em;
+	line-height: 2.5em;
 	text-align: center;
 	font-family: FontAwesome;
-	font-size: 14px;
+	font-size: 0.87em;
 	color: #1abc9c;
 }
 
@@ -350,9 +388,9 @@ footer a:hover
 	font-family: "Oswald","Lato",sans-serif;
 	color: #ecf0f1;
 	-webkit-appearance: none;
-	width: 120px;
-	height: 30px;
-	padding: 0 0 0 30px;
+	width: 11.25em;
+	height: 1.87em;
+	padding: 0 0 0 1.87em;
 	border: 0;
 	background: rgba(0,0,0,0);
 	-webkit-transition: all linear .2s;
@@ -382,7 +420,7 @@ footer a:hover
 
 .uk-search-field:focus,.uk-search.uk-active .uk-search-field
 {
-	width: 180px;
+	width: 11.25em;
 }
 
 .gs-image-box,.gsc-above-wrapper-area,.gsc-cursor-box,.gsc-url-bottom,.gsc-thumbnail,.gs-per-result-labels
@@ -463,7 +501,7 @@ footer a:hover
 	};
 }
 
-@media only screen and (max-width:320px)
+@media only screen and (max-width:31.25em)
 {
 	#content,header
 	{
@@ -544,6 +582,15 @@ footer a:hover
 	};
 }
 
+@media only screen and (max-height: 550px)
+{
+	.sitetaglist, .sitetaglisttitle
+	{
+		display: none;
+		visibility: hidden;
+	}
+}
+
 .portfoliobox
 {
 	text-align: center;
@@ -552,7 +599,7 @@ footer a:hover
 
 .portfoliobox img
 {
-	max-height: 160px;
+	max-height: 10em;
 }
 
 .portfoliobox h4

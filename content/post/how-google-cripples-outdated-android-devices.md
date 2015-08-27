@@ -1,6 +1,7 @@
 +++
 date = "2015-03-23T00:00:00+00:00"
 title = "How Google cripples outdated Android devices"
+tags = ["Android", "Google"]
 +++
 
 ## Why I downgraded my Nexus 5

@@ -1,7 +1,7 @@
 +++
 date = "2015-07-14T12:45:28+02:00"
 title = "Continuous integration with hugo and Wercker"
-
+tags = ["CI", "hugo", "wercker"]
 +++
 
 ## Why?

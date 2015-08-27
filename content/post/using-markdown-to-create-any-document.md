@@ -1,9 +1,7 @@
 +++
 title = "Using markdown to create any document (pdf, docx...)"
 date = "2014-02-10T00:00:00+00:00"
-aliases = [
-        "2014/using-markdown-to-create-any-document/"
-    ]
+aliases = ["2014/using-markdown-to-create-any-document/"]
 +++
 
 A few weeks ago I had to submit the contents of a GitHub repository to my teacher for grading. I wanted to use my readme.md-file while my teacher asked for a Word or a PDF document. Then I discovered this amazing program which converts Markdown to any desirable format!
