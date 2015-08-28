@@ -9,7 +9,8 @@ build:
         name: build with hugo
         code: |
             hugo
-    - samueldebruyn/minify
+    - samueldebruyn/minify:
+        only_on_branches: master
 deploy:
   box: samueldebruyn/debian-git
   steps:
