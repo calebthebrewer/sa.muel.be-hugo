@@ -13,9 +13,9 @@
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-        <meta property="og:title" content="Continuous integration with hugo and Wercker · Samuel Debruyn" />
-        <meta name="twitter:title" content="Continuous integration with hugo and Wercker · Samuel Debruyn" />
-        <title>Continuous integration with hugo and Wercker · Samuel Debruyn</title>
+        <meta property="og:title" content="Continuous integration with Hugo and Wercker · Samuel Debruyn" />
+        <meta name="twitter:title" content="Continuous integration with Hugo and Wercker · Samuel Debruyn" />
+        <title>Continuous integration with Hugo and Wercker · Samuel Debruyn</title>
         
         <meta property="og:site_name" content="Samuel Debruyn" />
         <meta property="og:locale " content="en-us" />
@@ -46,8 +46,8 @@
             { 
                 "@context": "http://schema.org",
                 "@type": "BlogPosting",
-                "headline": "Continuous integration with hugo and Wercker",
-                "name": "Continuous integration with hugo and Wercker",
+                "headline": "Continuous integration with Hugo and Wercker",
+                "name": "Continuous integration with Hugo and Wercker",
                 "author": {
                     "@type": "Person",
 "name": "Samuel Debruyn",
@@ -752,7 +752,15 @@ footer a:hover
 <ul class="sitetaglist">
   
     
-      <li><a href="/tags/windows">windows (4)</a></li>
+      <li><a href="/tags/hugo">hugo (5)</a></li>
+    
+  
+    
+      <li><a href="/tags/wercker">wercker (4)</a></li>
+    
+  
+    
+      <li><a href="/tags/ci">ci (4)</a></li>
     
   
     
@@ -760,19 +768,11 @@ footer a:hover
     
   
     
-      <li><a href="/tags/hugo">hugo (4)</a></li>
+      <li><a href="/tags/windows">windows (4)</a></li>
     
   
     
       <li><a href="/tags/wordpress">wordpress (3)</a></li>
-    
-  
-    
-      <li><a href="/tags/ci">ci (3)</a></li>
-    
-  
-    
-      <li><a href="/tags/wercker">wercker (3)</a></li>
     
   
     
@@ -802,21 +802,21 @@ footer a:hover
             
                 <a href="http://sa.muel.be/tags/ci/">CI</a>
             
-                <a href="http://sa.muel.be/tags/hugo/">hugo</a>
+                <a href="http://sa.muel.be/tags/hugo/">Hugo</a>
             
                 <a href="http://sa.muel.be/tags/wercker/">wercker</a>
             
         
         </span>
     </div>
-    <h1 class="post-title">Continuous integration with hugo and Wercker</h1>
+    <h1 class="post-title">Continuous integration with Hugo and Wercker</h1>
     
 
 <h2 id="why:bd381cc8b449e1516244ba8b37d0246b">Why?</h2>
 
 <p>Who doesn&rsquo;t love <a href="https://pages.github.com/">GitHub Pages</a>? It&rsquo;s the easiest way to create a simple website about a repository and you can even use <a href="http://jekyllrb.com/">Jekyll</a> to start blogging.</p>
 
-<p>As I recently switched from Jekyll to <a href="http://gohugo.io">hugo</a>, I needed a new way to enable continuous integration for my blog.</p>
+<p>As I recently switched from Jekyll to <a href="http://gohugo.io">Hugo</a>, I needed a new way to enable continuous integration for my blog.</p>
 
 <h2 id="new-to-ci:bd381cc8b449e1516244ba8b37d0246b">New to CI?</h2>
 
@@ -824,20 +824,20 @@ footer a:hover
 
 <p>I usually have a branch called <em>develop</em> to which I push fresh code. Then a CI tool checks if that code builds properly and if it does, I merge it to my <em>master</em> branch. It&rsquo;s a lot like <a href="https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow">Git Flow</a>.</p>
 
-<h2 id="what-about-hugo-and-github-pages:bd381cc8b449e1516244ba8b37d0246b">What about hugo and GitHub Pages?</h2>
+<h2 id="what-about-hugo-and-github-pages:bd381cc8b449e1516244ba8b37d0246b">What about Hugo and GitHub Pages?</h2>
 
 <p>You could setup a CI tool to build your code after every push on every branch and deploy it to GitHub Pages after a successful build on your stable/<em>master</em> branch.</p>
 
 <h2 id="in-comes-wercker:bd381cc8b449e1516244ba8b37d0246b">In comes Wercker</h2>
 
-<p>I used to use <a href="http://travis-ci.org">Travis</a> for all my CI needs, but then I came across <a href="http://wercker.com">Wercker</a> in the <a href="http://gohugo.io/tutorials/automated-deployments/">hugo docs</a>.</p>
+<p>I used to use <a href="http://travis-ci.org">Travis</a> for all my CI needs, but then I came across <a href="http://wercker.com">Wercker</a> in the <a href="http://gohugo.io/tutorials/automated-deployments/">Hugo docs</a>.</p>
 
 <p>Wercker simplifies CI a lot and relies on <a href="http://docker.com">Docker</a> for its build environments. It also allows you to deploy your builds to different environments (e.g. production, staging, testing&hellip;) Hugo has a guide about how to set it up, but it&rsquo;s a little bit outdated. I might just send a pull request with an update in a few days. Wercker also has a lot of documentation. So with the examples below, you should be able to easily walk through the setup.</p>
 
 <h3 id="setting-it-up:bd381cc8b449e1516244ba8b37d0246b">Setting it up</h3>
 
 <ol>
-<li>Create a new Wercker app based on the repository containing your hugo source code and give Wercker access rights. You can leave everything else on the default settings. If you&rsquo;d like a badge showing your build status, make sure your app is public.</li>
+<li>Create a new Wercker app based on the repository containing your Hugo source code and give Wercker access rights. You can leave everything else on the default settings. If you&rsquo;d like a badge showing your build status, make sure your app is public.</li>
 <li>Next, edit your app settings and create a custom deploy target including a protected environment variable called <code>GIT_TOKEN</code>.</li>
 
 <li><p>Finally, add a file called <em>wercker.yml</em> to your repository with the code below. Change it to fit your needs.</p>
@@ -874,7 +874,7 @@ deploy:
 <p>Obviously, you have to change the following variables:</p>
 
 <ul>
-<li><code>version</code>: the hugo version you use</li>
+<li><code>version</code>: the Hugo version you use</li>
 <li><code>theme</code>: the theme you use</li>
 <li><code>branch</code>: the branch on GitHub Pages you wish to publish on (should be <code>master</code> for personal/organization pages and <code>gh-pages</code> for project pages)</li>
 <li><code>repo</code>: the repository you wish to publish your pages in (should be <code>username/username.github.io</code> for personal/organization pages and <code>username/project-repo</code> for project pages)</li>
@@ -887,7 +887,7 @@ deploy:
 <h3 id="a-few-examples:bd381cc8b449e1516244ba8b37d0246b">A few examples</h3>
 
 <ul>
-<li>the hugo source code for this blog: <a href="https://github.com/SamuelDebruyn/sa.muel.be-hugo">https://github.com/SamuelDebruyn/sa.muel.be-hugo</a></li>
+<li>the Hugo source code for this blog: <a href="https://github.com/SamuelDebruyn/sa.muel.be-hugo">https://github.com/SamuelDebruyn/sa.muel.be-hugo</a></li>
 <li>the wercker app for this blog: <a href="https://app.wercker.com/#applications/5586dcbdaf7de9c51b02b0d5">https://app.wercker.com/#applications/5586dcbdaf7de9c51b02b0d5</a></li>
 <li>the generated source code for this blog: <a href="https://github.com/SamuelDebruyn/samueldebruyn.github.io">https://github.com/SamuelDebruyn/samueldebruyn.github.io</a></li>
 </ul>
@@ -895,7 +895,7 @@ deploy:
     <div id="social-bar">
 	<ul class="rrssb-buttons clearfix">
       <li class="email">
-          <a href="mailto:?subject=Continuous%20integration%20with%20hugo%20and%20Wercker&amp;body=http://sa.muel.be/2015/continuous-integration-with-hugo-and-wercker/" data-proofer-ignore>
+          <a href="mailto:?subject=Continuous%20integration%20with%20Hugo%20and%20Wercker&amp;body=http://sa.muel.be/2015/continuous-integration-with-hugo-and-wercker/" data-proofer-ignore>
               <span class="icon">
                   <svg version="1.1" id="btn-mail" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="28px" height="28px" viewBox="0 0 28 28" enable-background="new 0 0 28 28" xml:space="preserve">
                       <path transform="scale(0.014,-0.014) translate(0,-1670)" d="M1792 826v-794q0 -66 -47 -113t-113 -47h-1472q-66 0 -113 47t-47 113v794q44 -49 101 -87q362 -246 497 -345q57 -42 92.5 -65.5t94.5 -48t110 -24.5h1h1q51 0 110 24.5t94.5 48t92.5 65.5q170 123 498 345q57 39 100 87zM1792 1120q0 -79 -49 -151t-122 -123 q-376 -261 -468 -325q-10 -7 -42.5 -30.5t-54 -38t-52 -32.5t-57.5 -27t-50 -9h-1h-1q-23 0 -50 9t-57.5 27t-52 32.5t-54 38t-42.5 30.5q-91 64 -262 182.5t-205 142.5q-62 42 -117 115.5t-55 136.5q0 78 41.5 130t118.5 52h1472q65 0 112.5 -47t47.5 -113z"/>
@@ -905,7 +905,7 @@ deploy:
           </a>
       </li>
 			<li class="twitter">
-          <a href="http://twitter.com/home?status=Continuous%20integration%20with%20hugo%20and%20Wercker%20http://sa.muel.be/2015/continuous-integration-with-hugo-and-wercker/" class="popup">
+          <a href="http://twitter.com/home?status=Continuous%20integration%20with%20Hugo%20and%20Wercker%20http://sa.muel.be/2015/continuous-integration-with-hugo-and-wercker/" class="popup">
               <span class="icon">
                   <svg version="1.1" id="btn-tw" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="28px" height="28px" viewBox="0 0 28 28" enable-background="new 0 0 28 28" xml:space="preserve">
 		                  <path d="M24.253,8.756C24.689,17.08,18.297,24.182,9.97,24.62c-3.122,0.162-6.219-0.646-8.861-2.32 c2.703,0.179,5.376-0.648,7.508-2.321c-2.072-0.247-3.818-1.661-4.489-3.638c0.801,0.128,1.62,0.076,2.399-0.155 C4.045,15.72,2.215,13.6,2.115,11.077c0.688,0.275,1.426,0.407,2.168,0.386c-2.135-1.65-2.729-4.621-1.394-6.965 C5.575,7.816,9.54,9.84,13.803,10.071c-0.842-2.739,0.694-5.64,3.434-6.482c2.018-0.623,4.212,0.044,5.546,1.683 c1.186-0.213,2.318-0.662,3.329-1.317c-0.385,1.256-1.247,2.312-2.399,2.942c1.048-0.106,2.069-0.394,3.019-0.851 C26.275,7.229,25.39,8.196,24.253,8.756z"/>
@@ -915,7 +915,7 @@ deploy:
           </a>
       </li>
 			<li class="linkedin">
-          <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http://sa.muel.be/2015/continuous-integration-with-hugo-and-wercker/&amp;title=Continuous%20integration%20with%20hugo%20and%20Wercker&amp;summary=Why%3f%20Who%20doesn%26rsquo%3bt%20love%20GitHub%20Pages%3f%20It%26rsquo%3bs%20the%20easiest%20way%20to%20create%20a%20simple%20website%20about%20a%20repository%20and%20you%20can%20even%20use%20Jekyll%20to%20start%20blogging.%20As%20I%20recently%20switched%20from%20Jekyll%20to%20hugo%2c%20I%20needed%20a%20new%20way%20to%20enable%20continuous%20integration%20for%20my%20blog.%20New%20to%20CI%3f%20Continuous%20integration%2c%20or%20CI%2c%20means%20that%20your%20code%20is%20automatically%20built%2c%20tested%20and%2for%20deployed%20after%20each%20push.%20Every%20time%20you%20push%20some%20commits%20to%20a%20remote%20repository%2c%20the%20code%20in%20that%20repository%20is%20being%20built...." class="popup">
+          <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http://sa.muel.be/2015/continuous-integration-with-hugo-and-wercker/&amp;title=Continuous%20integration%20with%20Hugo%20and%20Wercker&amp;summary=Why%3f%20Who%20doesn%26rsquo%3bt%20love%20GitHub%20Pages%3f%20It%26rsquo%3bs%20the%20easiest%20way%20to%20create%20a%20simple%20website%20about%20a%20repository%20and%20you%20can%20even%20use%20Jekyll%20to%20start%20blogging.%20As%20I%20recently%20switched%20from%20Jekyll%20to%20Hugo%2c%20I%20needed%20a%20new%20way%20to%20enable%20continuous%20integration%20for%20my%20blog.%20New%20to%20CI%3f%20Continuous%20integration%2c%20or%20CI%2c%20means%20that%20your%20code%20is%20automatically%20built%2c%20tested%20and%2for%20deployed%20after%20each%20push.%20Every%20time%20you%20push%20some%20commits%20to%20a%20remote%20repository%2c%20the%20code%20in%20that%20repository%20is%20being%20built...." class="popup">
               <span class="icon">
                   <svg version="1.1" id="btn-li" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="28px" height="28px" viewBox="0 0 28 28" enable-background="new 0 0 28 28" xml:space="preserve">
                       <path d="M25.424,15.887v8.447h-4.896v-7.882c0-1.979-0.709-3.331-2.48-3.331c-1.354,0-2.158,0.911-2.514,1.803 c-0.129,0.315-0.162,0.753-0.162,1.194v8.216h-4.899c0,0,0.066-13.349,0-14.731h4.899v2.088c-0.01,0.016-0.023,0.032-0.033,0.048 h0.033V11.69c0.65-1.002,1.812-2.435,4.414-2.435C23.008,9.254,25.424,11.361,25.424,15.887z M5.348,2.501 c-1.676,0-2.772,1.092-2.772,2.539c0,1.421,1.066,2.538,2.717,2.546h0.032c1.709,0,2.771-1.132,2.771-2.546 C8.054,3.593,7.019,2.501,5.343,2.501H5.348z M2.867,24.334h4.897V9.603H2.867V24.334z"/>
@@ -926,7 +926,7 @@ deploy:
       </li>
       <li class="tumblr">
 					<script>
-						document.write('<a href="http://www.tumblr.com/share?v=3&amp;u=' + encodeURIComponent('http:\/\/sa.muel.be\/2015\/continuous-integration-with-hugo-and-wercker\/') + '&amp;t=Continuous integration with hugo and Wercker" class="popup">');
+						document.write('<a href="http://www.tumblr.com/share?v=3&amp;u=' + encodeURIComponent('http:\/\/sa.muel.be\/2015\/continuous-integration-with-hugo-and-wercker\/') + '&amp;t=Continuous integration with Hugo and Wercker" class="popup">');
 					</script>
               <span class="icon">
                   <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="28px" height="28px" viewBox="0 0 28 28" enable-background="new 0 0 28 28" xml:space="preserve">

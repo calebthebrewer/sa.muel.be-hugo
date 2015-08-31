@@ -13,9 +13,9 @@
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-        <meta property="og:title" content="Wercker step to validate hugo themes · Samuel Debruyn" />
-        <meta name="twitter:title" content="Wercker step to validate hugo themes · Samuel Debruyn" />
-        <title>Wercker step to validate hugo themes · Samuel Debruyn</title>
+        <meta property="og:title" content="Wercker step to validate Hugo themes · Samuel Debruyn" />
+        <meta name="twitter:title" content="Wercker step to validate Hugo themes · Samuel Debruyn" />
+        <title>Wercker step to validate Hugo themes · Samuel Debruyn</title>
         
         <meta property="og:site_name" content="Samuel Debruyn" />
         <meta property="og:locale " content="en-us" />
@@ -46,8 +46,8 @@
             { 
                 "@context": "http://schema.org",
                 "@type": "BlogPosting",
-                "headline": "Wercker step to validate hugo themes",
-                "name": "Wercker step to validate hugo themes",
+                "headline": "Wercker step to validate Hugo themes",
+                "name": "Wercker step to validate Hugo themes",
                 "author": {
                     "@type": "Person",
 "name": "Samuel Debruyn",
@@ -752,11 +752,15 @@ footer a:hover
 <ul class="sitetaglist">
   
     
-      <li><a href="/tags/hugo">hugo (4)</a></li>
+      <li><a href="/tags/hugo">hugo (5)</a></li>
     
   
     
-      <li><a href="/tags/windows">windows (4)</a></li>
+      <li><a href="/tags/wercker">wercker (4)</a></li>
+    
+  
+    
+      <li><a href="/tags/ci">ci (4)</a></li>
     
   
     
@@ -764,15 +768,11 @@ footer a:hover
     
   
     
+      <li><a href="/tags/windows">windows (4)</a></li>
+    
+  
+    
       <li><a href="/tags/wordpress">wordpress (3)</a></li>
-    
-  
-    
-      <li><a href="/tags/ci">ci (3)</a></li>
-    
-  
-    
-      <li><a href="/tags/wercker">wercker (3)</a></li>
     
   
     
@@ -802,19 +802,19 @@ footer a:hover
             
                 <a href="http://sa.muel.be/tags/ci/">CI</a>
             
-                <a href="http://sa.muel.be/tags/hugo/">hugo</a>
+                <a href="http://sa.muel.be/tags/hugo/">Hugo</a>
             
                 <a href="http://sa.muel.be/tags/wercker/">Wercker</a>
             
         
         </span>
     </div>
-    <h1 class="post-title">Wercker step to validate hugo themes</h1>
-    <p>So last week, I created <a href="/2015/material-lite-theme-for-hugo/">a material design theme</a> for <a href="http://gohugo.io">hugo</a>, a static site generator which I&rsquo;m <a href="/search/?q=hugo">quite fond of</a>.</p>
+    <h1 class="post-title">Wercker step to validate Hugo themes</h1>
+    <p>So last week, I created <a href="/2015/material-lite-theme-for-hugo/">a material design theme</a> for <a href="http://gohugo.io">Hugo</a>, a static site generator which I&rsquo;m <a href="/tags/hugo/">quite fond of</a>.</p>
 
 <p>As I <a href="/2015/continuous-integration-with-hugo-and-wercker/">discovered Wercker</a>, an awesome CI tool, I went looking for a way to automatically validate themes.</p>
 
-<p>There wasn&rsquo;t any, so I simply wrote a build step for <a href="http://wercker.com">Wercker</a>. The build step validates a hugo theme using <a href="https://github.com/spf13/HugoBasicExample">an example site</a>. It also checks if you included some files required for a future hugo themes site.</p>
+<p>There wasn&rsquo;t any, so I simply wrote a build step for <a href="http://wercker.com">Wercker</a>. The build step validates a Hugo theme using <a href="https://github.com/spf13/HugoBasicExample">an example site</a>. It also checks if you included some files required for a future Hugo themes site.</p>
 
 <p>The code for the build step is available at <a href="https://github.com/SamuelDebruyn/wercker-step-hugo-theme-check">https://github.com/SamuelDebruyn/wercker-step-hugo-theme-check</a> and an example <em>wercker.yml</em> configuration is included below.</p>
 
@@ -829,7 +829,7 @@ build:
     <div id="social-bar">
 	<ul class="rrssb-buttons clearfix">
       <li class="email">
-          <a href="mailto:?subject=Wercker%20step%20to%20validate%20hugo%20themes&amp;body=http://sa.muel.be/2015/wercker-step-to-validate-hugo-themes/" data-proofer-ignore>
+          <a href="mailto:?subject=Wercker%20step%20to%20validate%20Hugo%20themes&amp;body=http://sa.muel.be/2015/wercker-step-to-validate-hugo-themes/" data-proofer-ignore>
               <span class="icon">
                   <svg version="1.1" id="btn-mail" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="28px" height="28px" viewBox="0 0 28 28" enable-background="new 0 0 28 28" xml:space="preserve">
                       <path transform="scale(0.014,-0.014) translate(0,-1670)" d="M1792 826v-794q0 -66 -47 -113t-113 -47h-1472q-66 0 -113 47t-47 113v794q44 -49 101 -87q362 -246 497 -345q57 -42 92.5 -65.5t94.5 -48t110 -24.5h1h1q51 0 110 24.5t94.5 48t92.5 65.5q170 123 498 345q57 39 100 87zM1792 1120q0 -79 -49 -151t-122 -123 q-376 -261 -468 -325q-10 -7 -42.5 -30.5t-54 -38t-52 -32.5t-57.5 -27t-50 -9h-1h-1q-23 0 -50 9t-57.5 27t-52 32.5t-54 38t-42.5 30.5q-91 64 -262 182.5t-205 142.5q-62 42 -117 115.5t-55 136.5q0 78 41.5 130t118.5 52h1472q65 0 112.5 -47t47.5 -113z"/>
@@ -839,7 +839,7 @@ build:
           </a>
       </li>
 			<li class="twitter">
-          <a href="http://twitter.com/home?status=Wercker%20step%20to%20validate%20hugo%20themes%20http://sa.muel.be/2015/wercker-step-to-validate-hugo-themes/" class="popup">
+          <a href="http://twitter.com/home?status=Wercker%20step%20to%20validate%20Hugo%20themes%20http://sa.muel.be/2015/wercker-step-to-validate-hugo-themes/" class="popup">
               <span class="icon">
                   <svg version="1.1" id="btn-tw" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="28px" height="28px" viewBox="0 0 28 28" enable-background="new 0 0 28 28" xml:space="preserve">
 		                  <path d="M24.253,8.756C24.689,17.08,18.297,24.182,9.97,24.62c-3.122,0.162-6.219-0.646-8.861-2.32 c2.703,0.179,5.376-0.648,7.508-2.321c-2.072-0.247-3.818-1.661-4.489-3.638c0.801,0.128,1.62,0.076,2.399-0.155 C4.045,15.72,2.215,13.6,2.115,11.077c0.688,0.275,1.426,0.407,2.168,0.386c-2.135-1.65-2.729-4.621-1.394-6.965 C5.575,7.816,9.54,9.84,13.803,10.071c-0.842-2.739,0.694-5.64,3.434-6.482c2.018-0.623,4.212,0.044,5.546,1.683 c1.186-0.213,2.318-0.662,3.329-1.317c-0.385,1.256-1.247,2.312-2.399,2.942c1.048-0.106,2.069-0.394,3.019-0.851 C26.275,7.229,25.39,8.196,24.253,8.756z"/>
@@ -849,7 +849,7 @@ build:
           </a>
       </li>
 			<li class="linkedin">
-          <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http://sa.muel.be/2015/wercker-step-to-validate-hugo-themes/&amp;title=Wercker%20step%20to%20validate%20hugo%20themes&amp;summary=So%20last%20week%2c%20I%20created%20a%20material%20design%20theme%20for%20hugo%2c%20a%20static%20site%20generator%20which%20I%26rsquo%3bm%20quite%20fond%20of.%20As%20I%20discovered%20Wercker%2c%20an%20awesome%20CI%20tool%2c%20I%20went%20looking%20for%20a%20way%20to%20automatically%20validate%20themes.%20There%20wasn%26rsquo%3bt%20any%2c%20so%20I%20simply%20wrote%20a%20build%20step%20for%20Wercker.%20The%20build%20step%20validates%20a%20hugo%20theme%20using%20an%20example%20site.%20It%20also%20checks%20if%20you%20included%20some%20files%20required%20for%20a%20future%20hugo%20themes%20site...." class="popup">
+          <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http://sa.muel.be/2015/wercker-step-to-validate-hugo-themes/&amp;title=Wercker%20step%20to%20validate%20Hugo%20themes&amp;summary=So%20last%20week%2c%20I%20created%20a%20material%20design%20theme%20for%20Hugo%2c%20a%20static%20site%20generator%20which%20I%26rsquo%3bm%20quite%20fond%20of.%20As%20I%20discovered%20Wercker%2c%20an%20awesome%20CI%20tool%2c%20I%20went%20looking%20for%20a%20way%20to%20automatically%20validate%20themes.%20There%20wasn%26rsquo%3bt%20any%2c%20so%20I%20simply%20wrote%20a%20build%20step%20for%20Wercker.%20The%20build%20step%20validates%20a%20Hugo%20theme%20using%20an%20example%20site.%20It%20also%20checks%20if%20you%20included%20some%20files%20required%20for%20a%20future%20Hugo%20themes%20site...." class="popup">
               <span class="icon">
                   <svg version="1.1" id="btn-li" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="28px" height="28px" viewBox="0 0 28 28" enable-background="new 0 0 28 28" xml:space="preserve">
                       <path d="M25.424,15.887v8.447h-4.896v-7.882c0-1.979-0.709-3.331-2.48-3.331c-1.354,0-2.158,0.911-2.514,1.803 c-0.129,0.315-0.162,0.753-0.162,1.194v8.216h-4.899c0,0,0.066-13.349,0-14.731h4.899v2.088c-0.01,0.016-0.023,0.032-0.033,0.048 h0.033V11.69c0.65-1.002,1.812-2.435,4.414-2.435C23.008,9.254,25.424,11.361,25.424,15.887z M5.348,2.501 c-1.676,0-2.772,1.092-2.772,2.539c0,1.421,1.066,2.538,2.717,2.546h0.032c1.709,0,2.771-1.132,2.771-2.546 C8.054,3.593,7.019,2.501,5.343,2.501H5.348z M2.867,24.334h4.897V9.603H2.867V24.334z"/>
@@ -860,7 +860,7 @@ build:
       </li>
       <li class="tumblr">
 					<script>
-						document.write('<a href="http://www.tumblr.com/share?v=3&amp;u=' + encodeURIComponent('http:\/\/sa.muel.be\/2015\/wercker-step-to-validate-hugo-themes\/') + '&amp;t=Wercker step to validate hugo themes" class="popup">');
+						document.write('<a href="http://www.tumblr.com/share?v=3&amp;u=' + encodeURIComponent('http:\/\/sa.muel.be\/2015\/wercker-step-to-validate-hugo-themes\/') + '&amp;t=Wercker step to validate Hugo themes" class="popup">');
 					</script>
               <span class="icon">
                   <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="28px" height="28px" viewBox="0 0 28 28" enable-background="new 0 0 28 28" xml:space="preserve">
