@@ -7,7 +7,7 @@ tags = ["Docker", "hugo", "Wercker", "CI"]
 
 This blog is built with [hugo](http://gohugo.io), which allows me to use some great CI tools like [Wercker](http://wercker.com). The first part of writing a *wercker.yml* is picking a build container.
 
-A build container on Wercker is the environment in which your build or deploy steps run. Wecker used to build its own containers for that, but they've moved away from that approach to Docker containers. You can use all kinds of Docker containers, but most people just use one available publicly on [Docker Hub](https://registry.hub.docker.com/).
+A build container on Wercker is the environment in which your build or deploy steps run. Wercker used to build its own containers for that, but they've moved away from that approach to Docker containers. You can use all kinds of Docker containers, but most people just use one available publicly on [Docker Hub](https://registry.hub.docker.com/).
 
 To deploy my website to [GitHub pages](https://pages.github.com/), all I need is Git. So that's why I built [this simple Docker container](https://hub.docker.com/r/samueldebruyn/debian-git/) with Debian and Git.
 
@@ -19,7 +19,7 @@ Building this blog requires some more packages. Wercker doesn't automatically pu
 
 The image is quite big. It needs Java for YUI compressor, Ruby for html-proofer and Node for html-minifier. Setting up the environment and storing the container each take about half a minute. If you have some suggestions on making the image smaller, please [submit an issue or a pull request](https://github.com/SamuelDebruyn/docker-hugo-build).
 
-The latest list of incluced packages is available in the [README file](https://github.com/SamuelDebruyn/docker-hugo-build).
+The latest list of included packages is available in the [README file](https://github.com/SamuelDebruyn/docker-hugo-build).
 
 The build often fails on a time-out while running `apt-get`. It's usually *fixed* by running another build.
 
