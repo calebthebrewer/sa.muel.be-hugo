@@ -1,6 +1,6 @@
 +++
-date = "2015-08-31T07:40:23+02:00"
-draft = true
+date = "2015-08-31T18:56:39+02:00"
+draft = false
 title = "Docker image for hugo builds (with Wercker)"
 tags = ["Docker", "Hugo", "Wercker", "CI"]
 +++
