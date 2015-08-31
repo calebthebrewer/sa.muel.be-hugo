@@ -7,6 +7,6 @@ title = "this blog"
 
 +++
 
-This blog is made with [hugo](http://gohugo.io). I wrote a [blog post](/2015/an-introduction-to-hugo-a-static-site-generator/) about it when I switched from [Jekyll](http://jekyllrb.com/).
+This blog is made with [Hugo](http://gohugo.io). I wrote a [blog post](/2015/an-introduction-to-hugo-a-static-site-generator/) about it when I switched from [Jekyll](http://jekyllrb.com/).
 
 The source code is available on [GitHub](https://github.com/SamuelDebruyn/sa.muel.be-hugo).

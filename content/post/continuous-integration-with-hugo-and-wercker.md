@@ -1,14 +1,14 @@
 +++
 date = "2015-07-14T12:45:28+02:00"
-title = "Continuous integration with hugo and Wercker"
-tags = ["CI", "hugo", "wercker"]
+title = "Continuous integration with Hugo and Wercker"
+tags = ["CI", "Hugo", "wercker"]
 +++
 
 ## Why?
 
 Who doesn't love [GitHub Pages](https://pages.github.com/)? It's the easiest way to create a simple website about a repository and you can even use [Jekyll](http://jekyllrb.com/) to start blogging.
 
-As I recently switched from Jekyll to [hugo](http://gohugo.io), I needed a new way to enable continuous integration for my blog.
+As I recently switched from Jekyll to [Hugo](http://gohugo.io), I needed a new way to enable continuous integration for my blog.
 
 ## New to CI?
 
@@ -16,19 +16,19 @@ Continuous integration, or CI, means that your code is automatically built, test
 
 I usually have a branch called *develop* to which I push fresh code. Then a CI tool checks if that code builds properly and if it does, I merge it to my *master* branch. It's a lot like [Git Flow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow).
 
-## What about hugo and GitHub Pages?
+## What about Hugo and GitHub Pages?
 
 You could setup a CI tool to build your code after every push on every branch and deploy it to GitHub Pages after a successful build on your stable/*master* branch.
 
 ## In comes Wercker
 
-I used to use [Travis](http://travis-ci.org) for all my CI needs, but then I came across [Wercker](http://wercker.com) in the [hugo docs](http://gohugo.io/tutorials/automated-deployments/).
+I used to use [Travis](http://travis-ci.org) for all my CI needs, but then I came across [Wercker](http://wercker.com) in the [Hugo docs](http://gohugo.io/tutorials/automated-deployments/).
 
 Wercker simplifies CI a lot and relies on [Docker](http://docker.com) for its build environments. It also allows you to deploy your builds to different environments (e.g. production, staging, testing...) Hugo has a guide about how to set it up, but it's a little bit outdated. I might just send a pull request with an update in a few days. Wercker also has a lot of documentation. So with the examples below, you should be able to easily walk through the setup.
 
 ### Setting it up
 
-1. Create a new Wercker app based on the repository containing your hugo source code and give Wercker access rights. You can leave everything else on the default settings. If you'd like a badge showing your build status, make sure your app is public.
+1. Create a new Wercker app based on the repository containing your Hugo source code and give Wercker access rights. You can leave everything else on the default settings. If you'd like a badge showing your build status, make sure your app is public.
 1. Next, edit your app settings and create a custom deploy target including a protected environment variable called `GIT_TOKEN`.
 1. Finally, add a file called *wercker.yml* to your repository with the code below. Change it to fit your needs.
 
@@ -62,7 +62,7 @@ Wercker simplifies CI a lot and relies on [Docker](http://docker.com) for its bu
 
 	Obviously, you have to change the following variables:
 	
-	* `version`: the hugo version you use
+	* `version`: the Hugo version you use
 	* `theme`: the theme you use
 	* `branch`: the branch on GitHub Pages you wish to publish on (should be `master` for personal/organization pages and `gh-pages` for project pages)
 	* `repo`: the repository you wish to publish your pages in (should be `username/username.github.io` for personal/organization pages and `username/project-repo` for project pages)
@@ -72,6 +72,6 @@ Wercker simplifies CI a lot and relies on [Docker](http://docker.com) for its bu
 
 ### A few examples
 
-* the hugo source code for this blog: https://github.com/SamuelDebruyn/sa.muel.be-hugo
+* the Hugo source code for this blog: https://github.com/SamuelDebruyn/sa.muel.be-hugo
 * the wercker app for this blog: https://app.wercker.com/#applications/5586dcbdaf7de9c51b02b0d5
 * the generated source code for this blog: https://github.com/SamuelDebruyn/samueldebruyn.github.io

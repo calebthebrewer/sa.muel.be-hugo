@@ -5,11 +5,9 @@ build:
         name: initialize git submodules
         code: |
             git submodule update --init --recursive
-    - script:
-        name: build with hugo
-        code: |
-            hugo
-    - samueldebruyn/minify
+    - arjen/hugo-build
+    - samueldebruyn/minify:
+        only_on_branches: master
 deploy:
   box: samueldebruyn/debian-git
   steps:
@@ -17,6 +15,6 @@ deploy:
         gh_oauth: $GIT_TOKEN
         basedir: public
         clean_removed_files: true
-        branch: master
-        repo: SamuelDebruyn/samueldebruyn.github.io
-        gh_pages_domain: sa.muel.be
+        branch: $GIT_BRANCH
+        repo: $GIT_REPO
+        gh_pages_domain: $GIT_DOMAIN
