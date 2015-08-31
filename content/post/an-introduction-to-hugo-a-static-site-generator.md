@@ -1,7 +1,7 @@
 +++
 date = "2015-07-08T14:50:29+02:00"
-title = "An introduction to hugo, a static site generator"
-tags = ["hugo"]
+title = "An introduction to Hugo, a static site generator"
+tags = ["Hugo"]
 +++
 
 ## A good blogging platform
@@ -27,15 +27,15 @@ However, after a while, you start to notice the little things that make Jekyll a
 
 A few other static site generators [have sprung up](https://www.staticgen.com) since Jekyll's success.
 
-The one that caught my attention was [hugo](http://gohugo.io). It has all the goodness from Jekyll, but it's way easier to setup. Hugo itself is written in [Go](http://golang.org), but they build [executable binaries](https://github.com/spf13/hugo/releases) for a lot of platforms and architectures. So you don't need to install anything else. Even compiling it yourself isn't that hard.
+The one that caught my attention was [Hugo](http://gohugo.io). It has all the goodness from Jekyll, but it's way easier to setup. Hugo itself is written in [Go](http://golang.org), but they build [executable binaries](https://github.com/spf13/hugo/releases) for a lot of platforms and architectures. So you don't need to install anything else. Even compiling it yourself isn't that hard.
 
 The process of creating a new website is very similar to Jekyll. The `hugo` command literally explains itself (`hugo help`) and the [documentation](http://gohugo.io/overview/introduction/) on its website should suffice for most users.
 
-I've successfully migrated my [Jekyll blog](https://github.com/SamuelDebruyn/samueldebruyn.github.io/tree/5f5719a9d4519f8fbd4cdfffa2a10b3f066401ef) to [hugo](https://github.com/SamuelDebruyn/sa.muel.be-hugo) and haven't regretted it ever since.
+I've successfully migrated my [Jekyll blog](https://github.com/SamuelDebruyn/samueldebruyn.github.io/tree/5f5719a9d4519f8fbd4cdfffa2a10b3f066401ef) to [Hugo](https://github.com/SamuelDebruyn/sa.muel.be-hugo) and haven't regretted it ever since.
 
 ## Disadvantages
 
-One of the major disadvantages of hugo, or any static site generator for that matter, is integrating **search**. You need some [JavaScript magic](http://discuss.gohugo.io/t/how-are-you-implementing-site-search/986/14) or a 3rd party search provider like [Google Custom Search Engine](https://cse.google.com) (which I went for).
+One of the major disadvantages of Hugo, or any static site generator for that matter, is integrating **search**. You need some [JavaScript magic](http://discuss.gohugo.io/t/how-are-you-implementing-site-search/986/14) or a 3rd party search provider like [Google Custom Search Engine](https://cse.google.com) (which I went for).
 
 The other dynamic part of an ordinary blog is **the comment section**. Again, the easiest way to *fix* this is relying on a 3rd party comments plugin like [Disqus](https://disqus.com/).
 

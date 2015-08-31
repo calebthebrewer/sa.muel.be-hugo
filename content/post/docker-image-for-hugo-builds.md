@@ -2,16 +2,16 @@
 date = "2015-08-31T07:40:23+02:00"
 draft = true
 title = "Docker image for hugo builds (with Wercker)"
-tags = ["Docker", "hugo", "Wercker", "CI"]
+tags = ["Docker", "Hugo", "Wercker", "CI"]
 +++
 
-This blog is built with [hugo](http://gohugo.io), which allows me to use some great CI tools like [Wercker](http://wercker.com). The first part of writing a *wercker.yml* is picking a build container.
+This blog is built with [Hugo](http://gohugo.io), which allows me to use some great CI tools like [Wercker](http://wercker.com). The first part of writing a *wercker.yml* is picking a build container.
 
 A build container on Wercker is the environment in which your build or deploy steps run. Wercker used to build its own containers for that, but they've moved away from that approach to Docker containers. You can use all kinds of Docker containers, but most people just use one available publicly on [Docker Hub](https://registry.hub.docker.com/).
 
 To deploy my website to [GitHub pages](https://pages.github.com/), all I need is Git. So that's why I built [this simple Docker container](https://hub.docker.com/r/samueldebruyn/debian-git/) with Debian and Git.
 
-Building this blog requires some more packages. Wercker doesn't automatically pull in your Git submodules, so Git is also a necessity there. Another one is hugo, to build the static website itself. Hugo doesn't minimize your files, however. That's why I also include [YUI compressor](https://github.com/yui/yuicompressor) (minifies *.js and *.css) and [HTML minifier](https://github.com/kangax/html-minifier) (like the name says, minifies HTML files). Finally, I've been experimenting with [HTML proofer](https://github.com/gjtorikian/html-proofer) to validate the generated HTML files and check them for dead links. All of these packages (and their dependencies) are available in my Docker container called [hugo-build](https://hub.docker.com/r/samueldebruyn/hugo-build/).
+Building this blog requires some more packages. Wercker doesn't automatically pull in your Git submodules, so Git is also a necessity there. Another one is Hugo, to build the static website itself. Hugo doesn't minimize your files, however. That's why I also include [YUI compressor](https://github.com/yui/yuicompressor) (minifies *.js and *.css) and [HTML minifier](https://github.com/kangax/html-minifier) (like the name says, minifies HTML files). Finally, I've been experimenting with [HTML proofer](https://github.com/gjtorikian/html-proofer) to validate the generated HTML files and check them for dead links. All of these packages (and their dependencies) are available in my Docker container called [hugo-build](https://hub.docker.com/r/samueldebruyn/hugo-build/).
 
 ## Side notes
 
