@@ -9,7 +9,9 @@ build:
         source: staging
         destination: static
         ignore_branches: master
-    - arjen/hugo-build
+    - arjen/hugo-build:
+        prod_branches: master
+        dev_flags: --config=config-dev.toml
     - samueldebruyn/minify:
         only_on_branches: master
 deploy:
