@@ -1,9 +1,10 @@
-baseurl = "http://thuis.sa.muel.be:44888/"
+baseurl = "http://staging.sa.muel.be/"
 languageCode = "en-us"
 title = "Samuel Debruyn"
 paginate = 8
 theme = "crisp"
 builddrafts = true
+buildfuture = true
 
 [params]
     twitter = "SamuelDebruyn"
@@ -17,6 +18,7 @@ builddrafts = true
 
 [author]
     name = "Samuel Debruyn"
+    twitter = "SamuelDebruyn"
     email = "s@muel.be"
     birthDate = "1992-04-11"
     familyName = "Debruyn"
