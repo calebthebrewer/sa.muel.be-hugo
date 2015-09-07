@@ -1,7 +1,7 @@
 +++
 date = "2015-08-31T18:56:39+02:00"
 draft = false
-title = "Docker image for hugo builds (with Wercker)"
+title = "Docker image for Hugo builds (with Wercker)"
 tags = ["Docker", "Hugo", "Wercker", "CI"]
 +++
 

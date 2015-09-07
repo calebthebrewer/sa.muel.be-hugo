@@ -5,7 +5,13 @@ build:
         name: initialize git submodules
         code: |
             git submodule update --init --recursive
-    - arjen/hugo-build
+    - samueldebruyn/copy-files:
+        source: staging
+        destination: static
+        ignore_branches: master
+    - arjen/hugo-build:
+        prod_branches: master
+        dev_flags: --config=config-dev.toml
     - samueldebruyn/minify:
         only_on_branches: master
 deploy:
