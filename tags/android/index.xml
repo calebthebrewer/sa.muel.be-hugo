@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Android on Samuel Debruyn</title>
-    <link>http://sa.muel.be/tags/android/</link>
+    <link>http://staging.sa.muel.be/tags/android/</link>
     <description>Recent content in Android on Samuel Debruyn</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <managingEditor>s@muel.be (Samuel Debruyn)</managingEditor>
     <webMaster>s@muel.be (Samuel Debruyn)</webMaster>
     <lastBuildDate>Mon, 23 Mar 2015 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://sa.muel.be/tags/android/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://staging.sa.muel.be/tags/android/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>How Google cripples outdated Android devices</title>
-      <link>http://sa.muel.be/2015/how-google-cripples-outdated-android-devices/</link>
+      <link>http://staging.sa.muel.be/2015/how-google-cripples-outdated-android-devices/</link>
       <pubDate>Mon, 23 Mar 2015 00:00:00 +0000</pubDate>
       <author>s@muel.be (Samuel Debruyn)</author>
-      <guid>http://sa.muel.be/2015/how-google-cripples-outdated-android-devices/</guid>
+      <guid>http://staging.sa.muel.be/2015/how-google-cripples-outdated-android-devices/</guid>
       <description>
 
 &lt;h2 id=&#34;why-i-downgraded-my-nexus-5:c209b0e2d2354aad9e56c75e001a618a&#34;&gt;Why I downgraded my Nexus 5&lt;/h2&gt;

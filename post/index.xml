@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Samuel Debruyn</title>
-    <link>http://sa.muel.be/post/</link>
+    <link>http://staging.sa.muel.be/post/</link>
     <description>Recent content in Posts on Samuel Debruyn</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <managingEditor>s@muel.be (Samuel Debruyn)</managingEditor>
     <webMaster>s@muel.be (Samuel Debruyn)</webMaster>
     <lastBuildDate>Mon, 31 Aug 2015 18:56:39 +0200</lastBuildDate>
-    <atom:link href="http://sa.muel.be/post/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://staging.sa.muel.be/post/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Docker image for Hugo builds (with Wercker)</title>
-      <link>http://sa.muel.be/2015/docker-image-for-hugo-builds-with-wercker/</link>
+      <link>http://staging.sa.muel.be/2015/docker-image-for-hugo-builds-with-wercker/</link>
       <pubDate>Mon, 31 Aug 2015 18:56:39 +0200</pubDate>
       <author>s@muel.be (Samuel Debruyn)</author>
-      <guid>http://sa.muel.be/2015/docker-image-for-hugo-builds-with-wercker/</guid>
+      <guid>http://staging.sa.muel.be/2015/docker-image-for-hugo-builds-with-wercker/</guid>
       <description>
 
 &lt;p&gt;This blog is built with &lt;a href=&#34;http://gohugo.io&#34;&gt;Hugo&lt;/a&gt;, which allows me to use some great CI tools like &lt;a href=&#34;http://wercker.com&#34;&gt;Wercker&lt;/a&gt;. The first part of writing a &lt;em&gt;wercker.yml&lt;/em&gt; is picking a build container.&lt;/p&gt;
@@ -49,10 +49,10 @@
     
     <item>
       <title>The right way to create Windows installation media</title>
-      <link>http://sa.muel.be/2015/the-right-way-to-create-windows-installation-media/</link>
+      <link>http://staging.sa.muel.be/2015/the-right-way-to-create-windows-installation-media/</link>
       <pubDate>Wed, 26 Aug 2015 18:55:47 +0200</pubDate>
       <author>s@muel.be (Samuel Debruyn)</author>
-      <guid>http://sa.muel.be/2015/the-right-way-to-create-windows-installation-media/</guid>
+      <guid>http://staging.sa.muel.be/2015/the-right-way-to-create-windows-installation-media/</guid>
       <description>
 
 &lt;p&gt;There are several ways to create a USB stick to install Windows. Chances are you end up with an error during the installation or you (unknowingly) use the wrong partition layout for your HDD/SSD.&lt;/p&gt;
@@ -95,15 +95,15 @@
     
     <item>
       <title>Experiences with Windows 10 on a new Dell XPS 13 (2015)</title>
-      <link>http://sa.muel.be/2015/experiences-with-windows-10-on-a-new-dell-xps-13-2015/</link>
+      <link>http://staging.sa.muel.be/2015/experiences-with-windows-10-on-a-new-dell-xps-13-2015/</link>
       <pubDate>Wed, 26 Aug 2015 07:51:16 +0200</pubDate>
       <author>s@muel.be (Samuel Debruyn)</author>
-      <guid>http://sa.muel.be/2015/experiences-with-windows-10-on-a-new-dell-xps-13-2015/</guid>
+      <guid>http://staging.sa.muel.be/2015/experiences-with-windows-10-on-a-new-dell-xps-13-2015/</guid>
       <description>
 
 &lt;h2 id=&#34;ordering-a-new-workhorse:b79f60f580df3e0f9ebbeafe51282028&#34;&gt;Ordering a new workhorse&lt;/h2&gt;
 
-&lt;p&gt;Windows 10 RTM &lt;a href=&#34;http://sa.muel.be/img/post/dinoclippy.jpg&#34; title=&#34;awesome wallpaper&#34;&gt;has been out&lt;/a&gt; for about a month now after little less than a year of public &lt;a href=&#34;https://insider.windows.com/&#34; title=&#34;Insider program&#34;&gt;Insider preview&lt;/a&gt; builds. The motherboard of my old, trusty, Asus laptop was slowly dying and the Dell XPS 13&amp;rsquo;s thinness and battery life looked very attractive. I decided to go for it and order a &lt;a href=&#34;http://www.dell.com/us/p/xps-13-9343-laptop/&#34; title=&#34;Dell XPS 13&#34;&gt;Dell XPS 13 (2015)&lt;/a&gt;, without the touch screen. I hate dirty fingerprints on a screen and the better battery life of the version without the touch screen seemed like a better deal. I also ordered a &lt;a href=&#34;http://accessories.us.dell.com/sna/productdetail.aspx?c=us&amp;amp;l=en&amp;amp;s=dhs&amp;amp;cs=19&amp;amp;sku=470-abhh&#34; title=&#34;Dell adapter&#34;&gt;USB 3 -&amp;gt; HDMI/VGA/Ethernet/USB 2 adapter&lt;/a&gt; from Dell.&lt;/p&gt;
+&lt;p&gt;Windows 10 RTM &lt;a href=&#34;http://staging.sa.muel.be/img/post/dinoclippy.jpg&#34; title=&#34;awesome wallpaper&#34;&gt;has been out&lt;/a&gt; for about a month now after little less than a year of public &lt;a href=&#34;https://insider.windows.com/&#34; title=&#34;Insider program&#34;&gt;Insider preview&lt;/a&gt; builds. The motherboard of my old, trusty, Asus laptop was slowly dying and the Dell XPS 13&amp;rsquo;s thinness and battery life looked very attractive. I decided to go for it and order a &lt;a href=&#34;http://www.dell.com/us/p/xps-13-9343-laptop/&#34; title=&#34;Dell XPS 13&#34;&gt;Dell XPS 13 (2015)&lt;/a&gt;, without the touch screen. I hate dirty fingerprints on a screen and the better battery life of the version without the touch screen seemed like a better deal. I also ordered a &lt;a href=&#34;http://accessories.us.dell.com/sna/productdetail.aspx?c=us&amp;amp;l=en&amp;amp;s=dhs&amp;amp;cs=19&amp;amp;sku=470-abhh&#34; title=&#34;Dell adapter&#34;&gt;USB 3 -&amp;gt; HDMI/VGA/Ethernet/USB 2 adapter&lt;/a&gt; from Dell.&lt;/p&gt;
 
 &lt;p&gt;While Dell&amp;rsquo;s website tells you they will ship it in about 4 business days, it took nearly 3 weeks until UPS rang my bell with a shipment from China. By the way, Dell Belgium&amp;rsquo;s sales support is terrible. They offer support by phone and chat, but they will tell you on both channels that you have to send them an email. The Belgian support department was very abrupt and impolite. They can&amp;rsquo;t tell you why it looks like your laptop is sitting in an UPS storage facility in China without moving for about a week.&lt;/p&gt;
 
@@ -227,15 +227,15 @@
     
     <item>
       <title>Hardening your WordPress security</title>
-      <link>http://sa.muel.be/2015/hardening-your-wordpress-security/</link>
+      <link>http://staging.sa.muel.be/2015/hardening-your-wordpress-security/</link>
       <pubDate>Sun, 23 Aug 2015 22:30:51 +0200</pubDate>
       <author>s@muel.be (Samuel Debruyn)</author>
-      <guid>http://sa.muel.be/2015/hardening-your-wordpress-security/</guid>
+      <guid>http://staging.sa.muel.be/2015/hardening-your-wordpress-security/</guid>
       <description>
 
 &lt;h2 id=&#34;introduction:270325a472963f8dbe8695a68f29ae37&#34;&gt;Introduction&lt;/h2&gt;
 
-&lt;p&gt;This is the second part of a guide about &lt;a href=&#34;http://sa.muel.be/2015/recovering-a-hacked-wordpress/&#34;&gt;recovering a hacked WordPress&lt;/a&gt; and hardening your WordPress security.&lt;/p&gt;
+&lt;p&gt;This is the second part of a guide about &lt;a href=&#34;http://staging.sa.muel.be/2015/recovering-a-hacked-wordpress/&#34;&gt;recovering a hacked WordPress&lt;/a&gt; and hardening your WordPress security.&lt;/p&gt;
 
 &lt;p&gt;In the previous part, I showed you how to get back up and running after your website has been hacked. In this part I&amp;rsquo;ll demonstrate how you can avoid being hacked by making your WordPress more secure. I always try to be exhaustive, but if you have any suggestions, corrections or feel like anything is missing, I would like you to &lt;a href=&#34;mailto:s@muel.be?subject=Suggestions%20for%20the%20post%20about%20securing%20Wordpress&#34;&gt;let me know&lt;/a&gt;.&lt;/p&gt;
 
@@ -306,11 +306,11 @@
     
     <item>
       <title>Wercker step to minify static resources</title>
-      <link>http://sa.muel.be/2015/wercker-step-to-minify-static-resources/</link>
+      <link>http://staging.sa.muel.be/2015/wercker-step-to-minify-static-resources/</link>
       <pubDate>Sat, 25 Jul 2015 17:01:17 +0200</pubDate>
       <author>s@muel.be (Samuel Debruyn)</author>
-      <guid>http://sa.muel.be/2015/wercker-step-to-minify-static-resources/</guid>
-      <description>&lt;p&gt;I recently blogged a lot about &lt;a href=&#34;http://sa.muel.be/2015/an-introduction-to-hugo-a-static-site-generator/&#34;&gt;static websites&lt;/a&gt; and &lt;a href=&#34;http://sa.muel.be/2015/continuous-integration-with-hugo-and-wercker/&#34;&gt;continuous integration&lt;/a&gt;. There was still one step missing in my continuous integration cycle: &lt;strong&gt;minification&lt;/strong&gt;.&lt;/p&gt;
+      <guid>http://staging.sa.muel.be/2015/wercker-step-to-minify-static-resources/</guid>
+      <description>&lt;p&gt;I recently blogged a lot about &lt;a href=&#34;http://staging.sa.muel.be/2015/an-introduction-to-hugo-a-static-site-generator/&#34;&gt;static websites&lt;/a&gt; and &lt;a href=&#34;http://staging.sa.muel.be/2015/continuous-integration-with-hugo-and-wercker/&#34;&gt;continuous integration&lt;/a&gt;. There was still one step missing in my continuous integration cycle: &lt;strong&gt;minification&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://wercker.com/&#34;&gt;Wercker&lt;/a&gt; is a great CI tool and it allows you to create custom build steps that can be reused in several projects. So I created a build step to minify HTML, CSS and JS files.&lt;/p&gt;
 
@@ -320,13 +320,13 @@
     
     <item>
       <title>Wercker step to validate Hugo themes</title>
-      <link>http://sa.muel.be/2015/wercker-step-to-validate-hugo-themes/</link>
+      <link>http://staging.sa.muel.be/2015/wercker-step-to-validate-hugo-themes/</link>
       <pubDate>Wed, 15 Jul 2015 13:21:45 +0200</pubDate>
       <author>s@muel.be (Samuel Debruyn)</author>
-      <guid>http://sa.muel.be/2015/wercker-step-to-validate-hugo-themes/</guid>
-      <description>&lt;p&gt;So last week, I created &lt;a href=&#34;http://sa.muel.be/2015/material-lite-theme-for-hugo/&#34;&gt;a material design theme&lt;/a&gt; for &lt;a href=&#34;http://gohugo.io&#34;&gt;Hugo&lt;/a&gt;, a static site generator which I&amp;rsquo;m &lt;a href=&#34;http://sa.muel.be/tags/hugo/&#34;&gt;quite fond of&lt;/a&gt;.&lt;/p&gt;
+      <guid>http://staging.sa.muel.be/2015/wercker-step-to-validate-hugo-themes/</guid>
+      <description>&lt;p&gt;So last week, I created &lt;a href=&#34;http://staging.sa.muel.be/2015/material-lite-theme-for-hugo/&#34;&gt;a material design theme&lt;/a&gt; for &lt;a href=&#34;http://gohugo.io&#34;&gt;Hugo&lt;/a&gt;, a static site generator which I&amp;rsquo;m &lt;a href=&#34;http://staging.sa.muel.be/tags/hugo/&#34;&gt;quite fond of&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;As I &lt;a href=&#34;http://sa.muel.be/2015/continuous-integration-with-hugo-and-wercker/&#34;&gt;discovered Wercker&lt;/a&gt;, an awesome CI tool, I went looking for a way to automatically validate themes.&lt;/p&gt;
+&lt;p&gt;As I &lt;a href=&#34;http://staging.sa.muel.be/2015/continuous-integration-with-hugo-and-wercker/&#34;&gt;discovered Wercker&lt;/a&gt;, an awesome CI tool, I went looking for a way to automatically validate themes.&lt;/p&gt;
 
 &lt;p&gt;There wasn&amp;rsquo;t any, so I simply wrote a build step for &lt;a href=&#34;http://wercker.com&#34;&gt;Wercker&lt;/a&gt;. The build step validates a Hugo theme using &lt;a href=&#34;https://github.com/spf13/HugoBasicExample&#34;&gt;an example site&lt;/a&gt;. It also checks if you included some files required for a future Hugo themes site.&lt;/p&gt;
 
@@ -344,10 +344,10 @@ build:
     
     <item>
       <title>Continuous integration with Hugo and Wercker</title>
-      <link>http://sa.muel.be/2015/continuous-integration-with-hugo-and-wercker/</link>
+      <link>http://staging.sa.muel.be/2015/continuous-integration-with-hugo-and-wercker/</link>
       <pubDate>Tue, 14 Jul 2015 12:45:28 +0200</pubDate>
       <author>s@muel.be (Samuel Debruyn)</author>
-      <guid>http://sa.muel.be/2015/continuous-integration-with-hugo-and-wercker/</guid>
+      <guid>http://staging.sa.muel.be/2015/continuous-integration-with-hugo-and-wercker/</guid>
       <description>
 
 &lt;h2 id=&#34;why:bd381cc8b449e1516244ba8b37d0246b&#34;&gt;Why?&lt;/h2&gt;
@@ -434,11 +434,11 @@ deploy:
     
     <item>
       <title>Material-lite theme for Hugo</title>
-      <link>http://sa.muel.be/2015/material-lite-theme-for-hugo/</link>
+      <link>http://staging.sa.muel.be/2015/material-lite-theme-for-hugo/</link>
       <pubDate>Mon, 13 Jul 2015 08:00:00 +0200</pubDate>
       <author>s@muel.be (Samuel Debruyn)</author>
-      <guid>http://sa.muel.be/2015/material-lite-theme-for-hugo/</guid>
-      <description>&lt;p&gt;Last week, &lt;a href=&#34;http://sa.muel.be/2015/an-introduction-to-hugo-a-static-site-generator/&#34;&gt;I wrote a post&lt;/a&gt; about how awesome &lt;a href=&#34;http://gohugo.io&#34;&gt;Hugo&lt;/a&gt; is and why I switched from Jekyll to Hugo.&lt;/p&gt;
+      <guid>http://staging.sa.muel.be/2015/material-lite-theme-for-hugo/</guid>
+      <description>&lt;p&gt;Last week, &lt;a href=&#34;http://staging.sa.muel.be/2015/an-introduction-to-hugo-a-static-site-generator/&#34;&gt;I wrote a post&lt;/a&gt; about how awesome &lt;a href=&#34;http://gohugo.io&#34;&gt;Hugo&lt;/a&gt; is and why I switched from Jekyll to Hugo.&lt;/p&gt;
 
 &lt;p&gt;Then, a few days later, Google released an awesome template called &lt;a href=&#34;http://getmdl.io&#34;&gt;Material Design Lite&lt;/a&gt;. It&amp;rsquo;s basically Google&amp;rsquo;s famous &lt;a href=&#34;https://www.google.com/design/spec/material-design/introduction.html&#34;&gt;Material Design&lt;/a&gt; in HTML, CSS and JavaScript instead of in &lt;a href=&#34;https://www.polymer-project.org&#34;&gt;Polymer&lt;/a&gt;.&lt;/p&gt;
 
@@ -450,10 +450,10 @@ deploy:
     
     <item>
       <title>An introduction to Hugo, a static site generator</title>
-      <link>http://sa.muel.be/2015/an-introduction-to-hugo-a-static-site-generator/</link>
+      <link>http://staging.sa.muel.be/2015/an-introduction-to-hugo-a-static-site-generator/</link>
       <pubDate>Wed, 08 Jul 2015 14:50:29 +0200</pubDate>
       <author>s@muel.be (Samuel Debruyn)</author>
-      <guid>http://sa.muel.be/2015/an-introduction-to-hugo-a-static-site-generator/</guid>
+      <guid>http://staging.sa.muel.be/2015/an-introduction-to-hugo-a-static-site-generator/</guid>
       <description>
 
 &lt;h2 id=&#34;a-good-blogging-platform:a34406b09f2f50ebfd1f011b1ed64076&#34;&gt;A good blogging platform&lt;/h2&gt;
@@ -501,21 +501,21 @@ deploy:
     
     <item>
       <title>Recovering a hacked WordPress</title>
-      <link>http://sa.muel.be/2015/recovering-a-hacked-wordpress/</link>
+      <link>http://staging.sa.muel.be/2015/recovering-a-hacked-wordpress/</link>
       <pubDate>Mon, 06 Jul 2015 14:14:32 +0200</pubDate>
       <author>s@muel.be (Samuel Debruyn)</author>
-      <guid>http://sa.muel.be/2015/recovering-a-hacked-wordpress/</guid>
+      <guid>http://staging.sa.muel.be/2015/recovering-a-hacked-wordpress/</guid>
       <description>
 
 &lt;h2 id=&#34;introduction:b271d4e596dc01ff609a631b1dcbeb8c&#34;&gt;Introduction&lt;/h2&gt;
 
-&lt;p&gt;A few weeks ago, I had to &lt;a href=&#34;http://sa.muel.be/2015/about-that-time-i-dealt-with-a-bunch-of-hackers-on-a-wordpress/&#34;&gt;repair a hacked WordPress&lt;/a&gt; installation.&lt;/p&gt;
+&lt;p&gt;A few weeks ago, I had to &lt;a href=&#34;http://staging.sa.muel.be/2015/about-that-time-i-dealt-with-a-bunch-of-hackers-on-a-wordpress/&#34;&gt;repair a hacked WordPress&lt;/a&gt; installation.&lt;/p&gt;
 
 &lt;p&gt;A lot of the information I needed to successfully clean the WordPress completely of infected files was not centralized in a single guide. So I decided to write one and you are now reading it.&lt;/p&gt;
 
 &lt;p&gt;So, your website is hacked, what now? Let&amp;rsquo;s go through the process of making sure that every infection is removed and it never happens again.&lt;/p&gt;
 
-&lt;p&gt;In this first part you&amp;rsquo;ll recover from a hack. In a second part you&amp;rsquo;ll learn how to harden the security. I&amp;rsquo;ll publish &lt;a href=&#34;http://sa.muel.be/2015/hardening-your-wordpress-security/&#34;&gt;the second part&lt;/a&gt; a few weeks after the first part.&lt;/p&gt;
+&lt;p&gt;In this first part you&amp;rsquo;ll recover from a hack. In a second part you&amp;rsquo;ll learn how to harden the security. I&amp;rsquo;ll publish &lt;a href=&#34;http://staging.sa.muel.be/2015/hardening-your-wordpress-security/&#34;&gt;the second part&lt;/a&gt; a few weeks after the first part.&lt;/p&gt;
 
 &lt;p&gt;This post is meant to be exhaustive and clear. If you have any suggestions or feel like something is missing or unclear, &lt;a href=&#34;mailto:s@muel.be?subject=Suggestions%20for%20the%20post%20about%20recovering%20a%20Wordpress%20hack&#34;&gt;&lt;em&gt;please&lt;/em&gt; let me know&lt;/a&gt;.&lt;/p&gt;
 
@@ -629,7 +629,7 @@ SELECT * FROM wp_comments WHERE comment_content LIKE &#39;%&amp;lt;?php%&#39;
 
 &lt;h2 id=&#34;harden-your-wordpress-security:b271d4e596dc01ff609a631b1dcbeb8c&#34;&gt;Harden your WordPress Security&lt;/h2&gt;
 
-&lt;p&gt;A few weeks after this post, I&amp;rsquo;ll publish &lt;a href=&#34;http://sa.muel.be/2015/hardening-your-wordpress-security/&#34;&gt;a follow-up guide&lt;/a&gt; on improving the security on your WordPress website.&lt;/p&gt;
+&lt;p&gt;A few weeks after this post, I&amp;rsquo;ll publish &lt;a href=&#34;http://staging.sa.muel.be/2015/hardening-your-wordpress-security/&#34;&gt;a follow-up guide&lt;/a&gt; on improving the security on your WordPress website.&lt;/p&gt;
 
 &lt;h2 id=&#34;sources:b271d4e596dc01ff609a631b1dcbeb8c&#34;&gt;Sources&lt;/h2&gt;
 
@@ -646,10 +646,10 @@ SELECT * FROM wp_comments WHERE comment_content LIKE &#39;%&amp;lt;?php%&#39;
     
     <item>
       <title>About that time I dealt with a bunch of hackers on a WordPress</title>
-      <link>http://sa.muel.be/2015/about-that-time-i-dealt-with-a-bunch-of-hackers-on-a-wordpress/</link>
+      <link>http://staging.sa.muel.be/2015/about-that-time-i-dealt-with-a-bunch-of-hackers-on-a-wordpress/</link>
       <pubDate>Sat, 27 Jun 2015 17:55:40 +0200</pubDate>
       <author>s@muel.be (Samuel Debruyn)</author>
-      <guid>http://sa.muel.be/2015/about-that-time-i-dealt-with-a-bunch-of-hackers-on-a-wordpress/</guid>
+      <guid>http://staging.sa.muel.be/2015/about-that-time-i-dealt-with-a-bunch-of-hackers-on-a-wordpress/</guid>
       <description>&lt;p&gt;So yeah, that happened. I recently took over 2 WordPress installations hosted on a &lt;a href=&#34;http://www.versio.uk/&#34;&gt;Versio&lt;/a&gt; shared hosting account. Versio suspended the account because it kept sending thousands of (spam) emails a day.&lt;/p&gt;
 
 &lt;p&gt;You guessed it right, one of the WordPress installations was hacked. The previous administrator tried to delete the infected files and changed his passwords. It took them a week to regain full control of both the WordPress installations. Once they got into one of the WordPress setups, it was just a matter of navigating through the filesystem to find and infect the other WordPress installation.&lt;/p&gt;
@@ -670,7 +670,7 @@ SELECT * FROM wp_comments WHERE comment_content LIKE &#39;%&amp;lt;?php%&#39;
 
 &lt;p&gt;So that was all, right? Nope, a few days later they were back. This time they named their files something like &lt;em&gt;diff52.php&lt;/em&gt; as this wouldn&amp;rsquo;t look as suspicious as &lt;em&gt;indonesia.php&lt;/em&gt;. CloudFlare also showed some blocked threats from Russia and Ukraine.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://sa.muel.be/addendum/2015/obfuscated-code-from-the-wordpress-hack/&#34;&gt;This is an example of the code I found&lt;/a&gt; and &lt;a href=&#34;http://sa.muel.be/addendum/2015/deobfuscated-code-from-the-wordpress-hack/&#34;&gt;this is the deobfuscated version of it&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://staging.sa.muel.be/addendum/2015/obfuscated-code-from-the-wordpress-hack/&#34;&gt;This is an example of the code I found&lt;/a&gt; and &lt;a href=&#34;http://staging.sa.muel.be/addendum/2015/deobfuscated-code-from-the-wordpress-hack/&#34;&gt;this is the deobfuscated version of it&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;I repeated the whole process but I kept wondering how they could get in. The only thing I didn&amp;rsquo;t check were the plugins. A few days before I reinstalled them all using Sucuri Security so they didn&amp;rsquo;t contain any infections. But they had to be the cause, right? I simply deactivated and removed all of them except for the ones I installed to secure the website. That did it. It&amp;rsquo;s been a week and the hackers haven&amp;rsquo;t been back since.&lt;/p&gt;
 
@@ -684,10 +684,10 @@ SELECT * FROM wp_comments WHERE comment_content LIKE &#39;%&amp;lt;?php%&#39;
     
     <item>
       <title>Geocoding addresses in Talend Open Studio for Data Integration</title>
-      <link>http://sa.muel.be/2015/geocoding-addresses-in-talend-open-studio-for-data-integration/</link>
+      <link>http://staging.sa.muel.be/2015/geocoding-addresses-in-talend-open-studio-for-data-integration/</link>
       <pubDate>Sat, 18 Apr 2015 00:00:00 +0000</pubDate>
       <author>s@muel.be (Samuel Debruyn)</author>
-      <guid>http://sa.muel.be/2015/geocoding-addresses-in-talend-open-studio-for-data-integration/</guid>
+      <guid>http://staging.sa.muel.be/2015/geocoding-addresses-in-talend-open-studio-for-data-integration/</guid>
       <description>&lt;p&gt;Last week I had to geocode the addresses in a dataset using Talend. Geocoding is adding coordinates to addresses. This way you can easily visualize your data on a map.&lt;/p&gt;
 
 &lt;p&gt;I experienced problems when I tried to download some plugins from Talend Exchange but I found &lt;a href=&#34;http://datacatalyst.blogspot.be/2011/01/custom-google-geocoder-using-talend.html&#34;&gt;this blog post&lt;/a&gt; about geocoding without the use of a plugin. The blogpost wasn&amp;rsquo;t very clear so I decided to write a step-by-step explanation which you can find below. In this guide, we will be using the &lt;a href=&#34;https://developers.google.com/maps/documentation/geocoding/&#34;&gt;Google Geocoding API&lt;/a&gt;.&lt;/p&gt;
@@ -729,10 +729,10 @@ SELECT * FROM wp_comments WHERE comment_content LIKE &#39;%&amp;lt;?php%&#39;
     
     <item>
       <title>How Google cripples outdated Android devices</title>
-      <link>http://sa.muel.be/2015/how-google-cripples-outdated-android-devices/</link>
+      <link>http://staging.sa.muel.be/2015/how-google-cripples-outdated-android-devices/</link>
       <pubDate>Mon, 23 Mar 2015 00:00:00 +0000</pubDate>
       <author>s@muel.be (Samuel Debruyn)</author>
-      <guid>http://sa.muel.be/2015/how-google-cripples-outdated-android-devices/</guid>
+      <guid>http://staging.sa.muel.be/2015/how-google-cripples-outdated-android-devices/</guid>
       <description>
 
 &lt;h2 id=&#34;why-i-downgraded-my-nexus-5:c209b0e2d2354aad9e56c75e001a618a&#34;&gt;Why I downgraded my Nexus 5&lt;/h2&gt;
@@ -809,10 +809,10 @@ adb shell su -c pm disable com.google.android.gsf/.update.SystemUpdateService$Se
     
     <item>
       <title>Natively boot Windows 10 Technical Preview with a virtual HDD</title>
-      <link>http://sa.muel.be/2015/natively-boot-windows-10-technical-preview-with-a-virtual-hdd/</link>
+      <link>http://staging.sa.muel.be/2015/natively-boot-windows-10-technical-preview-with-a-virtual-hdd/</link>
       <pubDate>Sun, 25 Jan 2015 00:00:00 +0000</pubDate>
       <author>s@muel.be (Samuel Debruyn)</author>
-      <guid>http://sa.muel.be/2015/natively-boot-windows-10-technical-preview-with-a-virtual-hdd/</guid>
+      <guid>http://staging.sa.muel.be/2015/natively-boot-windows-10-technical-preview-with-a-virtual-hdd/</guid>
       <description>&lt;p&gt;A few days ago &lt;a href=&#34;https://insider.windows.com&#34;&gt;Microsoft released a new build for Windows 10&lt;/a&gt; and I wanted to give it a try. However, I didn&amp;rsquo;t want to resize my partitions or overwrite my Windows 8.1 partition.&lt;/p&gt;
 
 &lt;blockquote&gt;
@@ -841,10 +841,10 @@ adb shell su -c pm disable com.google.android.gsf/.update.SystemUpdateService$Se
     
     <item>
       <title>Queue for MessageDialog in Windows RT</title>
-      <link>http://sa.muel.be/2014/queue-for-messagedialog-in-windows-rt/</link>
+      <link>http://staging.sa.muel.be/2014/queue-for-messagedialog-in-windows-rt/</link>
       <pubDate>Wed, 20 Aug 2014 00:00:00 +0000</pubDate>
       <author>s@muel.be (Samuel Debruyn)</author>
-      <guid>http://sa.muel.be/2014/queue-for-messagedialog-in-windows-rt/</guid>
+      <guid>http://staging.sa.muel.be/2014/queue-for-messagedialog-in-windows-rt/</guid>
       <description>&lt;p&gt;When I write Windows Store applications, I use MessageDialog a lot.
 It&amp;rsquo;s the easiest way to show a quick informative pop-up message or a question to the user.
 However, when you tend to use this quite often, you&amp;rsquo;ll probably run into a problem.&lt;/p&gt;

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Windows on Samuel Debruyn</title>
-    <link>http://sa.muel.be/tags/windows/</link>
+    <link>http://staging.sa.muel.be/tags/windows/</link>
     <description>Recent content in Windows on Samuel Debruyn</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <managingEditor>s@muel.be (Samuel Debruyn)</managingEditor>
     <webMaster>s@muel.be (Samuel Debruyn)</webMaster>
     <lastBuildDate>Wed, 26 Aug 2015 18:55:47 +0200</lastBuildDate>
-    <atom:link href="http://sa.muel.be/tags/windows/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://staging.sa.muel.be/tags/windows/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>The right way to create Windows installation media</title>
-      <link>http://sa.muel.be/2015/the-right-way-to-create-windows-installation-media/</link>
+      <link>http://staging.sa.muel.be/2015/the-right-way-to-create-windows-installation-media/</link>
       <pubDate>Wed, 26 Aug 2015 18:55:47 +0200</pubDate>
       <author>s@muel.be (Samuel Debruyn)</author>
-      <guid>http://sa.muel.be/2015/the-right-way-to-create-windows-installation-media/</guid>
+      <guid>http://staging.sa.muel.be/2015/the-right-way-to-create-windows-installation-media/</guid>
       <description>
 
 &lt;p&gt;There are several ways to create a USB stick to install Windows. Chances are you end up with an error during the installation or you (unknowingly) use the wrong partition layout for your HDD/SSD.&lt;/p&gt;
@@ -59,15 +59,15 @@
     
     <item>
       <title>Experiences with Windows 10 on a new Dell XPS 13 (2015)</title>
-      <link>http://sa.muel.be/2015/experiences-with-windows-10-on-a-new-dell-xps-13-2015/</link>
+      <link>http://staging.sa.muel.be/2015/experiences-with-windows-10-on-a-new-dell-xps-13-2015/</link>
       <pubDate>Wed, 26 Aug 2015 07:51:16 +0200</pubDate>
       <author>s@muel.be (Samuel Debruyn)</author>
-      <guid>http://sa.muel.be/2015/experiences-with-windows-10-on-a-new-dell-xps-13-2015/</guid>
+      <guid>http://staging.sa.muel.be/2015/experiences-with-windows-10-on-a-new-dell-xps-13-2015/</guid>
       <description>
 
 &lt;h2 id=&#34;ordering-a-new-workhorse:b79f60f580df3e0f9ebbeafe51282028&#34;&gt;Ordering a new workhorse&lt;/h2&gt;
 
-&lt;p&gt;Windows 10 RTM &lt;a href=&#34;http://sa.muel.be/img/post/dinoclippy.jpg&#34; title=&#34;awesome wallpaper&#34;&gt;has been out&lt;/a&gt; for about a month now after little less than a year of public &lt;a href=&#34;https://insider.windows.com/&#34; title=&#34;Insider program&#34;&gt;Insider preview&lt;/a&gt; builds. The motherboard of my old, trusty, Asus laptop was slowly dying and the Dell XPS 13&amp;rsquo;s thinness and battery life looked very attractive. I decided to go for it and order a &lt;a href=&#34;http://www.dell.com/us/p/xps-13-9343-laptop/&#34; title=&#34;Dell XPS 13&#34;&gt;Dell XPS 13 (2015)&lt;/a&gt;, without the touch screen. I hate dirty fingerprints on a screen and the better battery life of the version without the touch screen seemed like a better deal. I also ordered a &lt;a href=&#34;http://accessories.us.dell.com/sna/productdetail.aspx?c=us&amp;amp;l=en&amp;amp;s=dhs&amp;amp;cs=19&amp;amp;sku=470-abhh&#34; title=&#34;Dell adapter&#34;&gt;USB 3 -&amp;gt; HDMI/VGA/Ethernet/USB 2 adapter&lt;/a&gt; from Dell.&lt;/p&gt;
+&lt;p&gt;Windows 10 RTM &lt;a href=&#34;http://staging.sa.muel.be/img/post/dinoclippy.jpg&#34; title=&#34;awesome wallpaper&#34;&gt;has been out&lt;/a&gt; for about a month now after little less than a year of public &lt;a href=&#34;https://insider.windows.com/&#34; title=&#34;Insider program&#34;&gt;Insider preview&lt;/a&gt; builds. The motherboard of my old, trusty, Asus laptop was slowly dying and the Dell XPS 13&amp;rsquo;s thinness and battery life looked very attractive. I decided to go for it and order a &lt;a href=&#34;http://www.dell.com/us/p/xps-13-9343-laptop/&#34; title=&#34;Dell XPS 13&#34;&gt;Dell XPS 13 (2015)&lt;/a&gt;, without the touch screen. I hate dirty fingerprints on a screen and the better battery life of the version without the touch screen seemed like a better deal. I also ordered a &lt;a href=&#34;http://accessories.us.dell.com/sna/productdetail.aspx?c=us&amp;amp;l=en&amp;amp;s=dhs&amp;amp;cs=19&amp;amp;sku=470-abhh&#34; title=&#34;Dell adapter&#34;&gt;USB 3 -&amp;gt; HDMI/VGA/Ethernet/USB 2 adapter&lt;/a&gt; from Dell.&lt;/p&gt;
 
 &lt;p&gt;While Dell&amp;rsquo;s website tells you they will ship it in about 4 business days, it took nearly 3 weeks until UPS rang my bell with a shipment from China. By the way, Dell Belgium&amp;rsquo;s sales support is terrible. They offer support by phone and chat, but they will tell you on both channels that you have to send them an email. The Belgian support department was very abrupt and impolite. They can&amp;rsquo;t tell you why it looks like your laptop is sitting in an UPS storage facility in China without moving for about a week.&lt;/p&gt;
 
@@ -191,10 +191,10 @@
     
     <item>
       <title>Natively boot Windows 10 Technical Preview with a virtual HDD</title>
-      <link>http://sa.muel.be/2015/natively-boot-windows-10-technical-preview-with-a-virtual-hdd/</link>
+      <link>http://staging.sa.muel.be/2015/natively-boot-windows-10-technical-preview-with-a-virtual-hdd/</link>
       <pubDate>Sun, 25 Jan 2015 00:00:00 +0000</pubDate>
       <author>s@muel.be (Samuel Debruyn)</author>
-      <guid>http://sa.muel.be/2015/natively-boot-windows-10-technical-preview-with-a-virtual-hdd/</guid>
+      <guid>http://staging.sa.muel.be/2015/natively-boot-windows-10-technical-preview-with-a-virtual-hdd/</guid>
       <description>&lt;p&gt;A few days ago &lt;a href=&#34;https://insider.windows.com&#34;&gt;Microsoft released a new build for Windows 10&lt;/a&gt; and I wanted to give it a try. However, I didn&amp;rsquo;t want to resize my partitions or overwrite my Windows 8.1 partition.&lt;/p&gt;
 
 &lt;blockquote&gt;
@@ -223,10 +223,10 @@
     
     <item>
       <title>Quick tips for problems with Windows Store and Windows 8 apps</title>
-      <link>http://sa.muel.be/2014/quick-tips-for-problems-with-windows-store-and-windows-8-apps/</link>
+      <link>http://staging.sa.muel.be/2014/quick-tips-for-problems-with-windows-store-and-windows-8-apps/</link>
       <pubDate>Sun, 23 Mar 2014 00:00:00 +0000</pubDate>
       <author>s@muel.be (Samuel Debruyn)</author>
-      <guid>http://sa.muel.be/2014/quick-tips-for-problems-with-windows-store-and-windows-8-apps/</guid>
+      <guid>http://staging.sa.muel.be/2014/quick-tips-for-problems-with-windows-store-and-windows-8-apps/</guid>
       <description>
 
 &lt;p&gt;These are a few quick tips for when you&amp;rsquo;re experiencing problems with the Windows Store in Windows 8(.1)/9 and opening apps in Windows 8(.1)/9.&lt;/p&gt;

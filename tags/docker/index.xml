@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Docker on Samuel Debruyn</title>
-    <link>http://sa.muel.be/tags/docker/</link>
+    <link>http://staging.sa.muel.be/tags/docker/</link>
     <description>Recent content in Docker on Samuel Debruyn</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <managingEditor>s@muel.be (Samuel Debruyn)</managingEditor>
     <webMaster>s@muel.be (Samuel Debruyn)</webMaster>
     <lastBuildDate>Mon, 31 Aug 2015 18:56:39 +0200</lastBuildDate>
-    <atom:link href="http://sa.muel.be/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://staging.sa.muel.be/tags/docker/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Docker image for Hugo builds (with Wercker)</title>
-      <link>http://sa.muel.be/2015/docker-image-for-hugo-builds-with-wercker/</link>
+      <link>http://staging.sa.muel.be/2015/docker-image-for-hugo-builds-with-wercker/</link>
       <pubDate>Mon, 31 Aug 2015 18:56:39 +0200</pubDate>
       <author>s@muel.be (Samuel Debruyn)</author>
-      <guid>http://sa.muel.be/2015/docker-image-for-hugo-builds-with-wercker/</guid>
+      <guid>http://staging.sa.muel.be/2015/docker-image-for-hugo-builds-with-wercker/</guid>
       <description>
 
 &lt;p&gt;This blog is built with &lt;a href=&#34;http://gohugo.io&#34;&gt;Hugo&lt;/a&gt;, which allows me to use some great CI tools like &lt;a href=&#34;http://wercker.com&#34;&gt;Wercker&lt;/a&gt;. The first part of writing a &lt;em&gt;wercker.yml&lt;/em&gt; is picking a build container.&lt;/p&gt;
