@@ -8,15 +8,15 @@ tags = ["OnePlus"]
 
 Back in August, when they were about to launch the OnePlus Two, the *2016 flagship killer* which turned out be merely be a 2014 kind-of-flagship, they launched [a waiting list](https://oneplus.net/invites). You can subscribe to this list and every time an invite is left unused, it's sent to the next person on the list.
 
-The list quickly grew to hundreds of thousands of people, but there was one catch: you could get higher on the list of someone else subscribed to the list with a URL you shared. All you needed to subscribe was a unique email address.
+The list quickly grew to hundreds of thousands of people, but there was one catch: you could get higher on the list if someone else subscribed to the list with a URL you shared. All you needed to subscribe was a unique email address.
 
-If you own a domain, you can set up a catch all address so that everything @yourdomain.tld arrives in your mailbox. And if you have Gmail account, everything with yourusername+somethingrandom@gmail.com arrives in your mailbox. So most people actually have an infinite amount of email address.
+If you own a domain, you can set up a catch all address so that everything @yourdomain.tld arrives in your mailbox. And if you have a Gmail account, everything with yourusername+somethingrandom@gmail.com arrives in your mailbox. So most people actually have an infinite amount of email addresses.
 
 As I was interested in buying a OnePlus Two at the time, I subscribed with my email address and used about 100 other email addresses to get myself higher on the list. As this *trick* was mentioned a lot on Reddit, I figured OnePlus would have *fixed* this *bug* in their invite system somehow.
 
 Turns out, they didn't. A few days ago, I started receiving tens of invites for a OnePlus Two. There was another catch: you can only use these invites with the address you used for the waiting list. It's *impossible* to share the invites.
 
-Here's the workaround:
+## Here's the workaround:
 
 1. Register a new OnePlus account with the email address that received the invite.
 1. Confirm the account with an email you receive shortly after registration.
