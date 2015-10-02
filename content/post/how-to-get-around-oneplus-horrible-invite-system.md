@@ -1,15 +1,14 @@
 +++
 date = "2015-10-02T15:34:19+02:00"
-draft = true
 title = "How to get around OnePlus's horrible invite system"
-
+tags = ["OnePlus"]
 +++
 
 [OnePlus](https://oneplus.net/), the company famous for its [terrible service](https://www.google.be/search?q=oneplus+service+horror+story) and its [miserable invite system](http://www.androidpolice.com/2015/07/30/editorial-if-oneplus-will-basically-just-lie-with-marketing-slogans-we-have-no-reason-to-respect-them/), failed once again.
 
 Back in August, when they were about to launch the OnePlus Two, the *2016 flagship killer* which turned out be merely be a 2014 kind-of-flagship, they launched [a waiting list](https://oneplus.net/invites). You can subscribe to this list and every time an invite is left unused, it's sent to the next person on the list.
 
-The list quickly grew to hunderds of thousands of people, but there was one catch: you could get higher on the list of someone else subscribed to the list with a URL you shared. All you needed to subscribe was a unique email address.
+The list quickly grew to hundreds of thousands of people, but there was one catch: you could get higher on the list of someone else subscribed to the list with a URL you shared. All you needed to subscribe was a unique email address.
 
 If you own a domain, you can set up a catch all address so that everything @yourdomain.tld arrives in your mailbox. And if you have Gmail account, everything with yourusername+somethingrandom@gmail.com arrives in your mailbox. So most people actually have an infinite amount of email address.
 
