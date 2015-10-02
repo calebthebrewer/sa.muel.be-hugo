@@ -1,7 +1,7 @@
 +++
 date = "2014-08-20T00:00:00+00:00"
 title = "Queue for MessageDialog in Windows RT"
-tags = ["WinDev", "CSharp"]
+tags = ["WindowsDev", "CSharp"]
 +++
 
 When I write Windows Store applications, I use MessageDialog a lot.

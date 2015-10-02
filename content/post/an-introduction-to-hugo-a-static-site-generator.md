@@ -1,7 +1,7 @@
 +++
 date = "2015-07-08T14:50:29+02:00"
 title = "An introduction to Hugo, a static site generator"
-tags = ["Hugo"]
+tags = ["Hugo", "jekyll"]
 +++
 
 ## A good blogging platform
