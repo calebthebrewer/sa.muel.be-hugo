@@ -8,8 +8,31 @@
     <language>en-us</language>
     <managingEditor>s@muel.be (Samuel Debruyn)</managingEditor>
     <webMaster>s@muel.be (Samuel Debruyn)</webMaster>
-    <lastBuildDate>Fri, 02 Oct 2015 15:34:19 +0200</lastBuildDate>
+    <lastBuildDate>Sun, 11 Oct 2015 22:24:28 +0200</lastBuildDate>
     <atom:link href="http://staging.sa.muel.be/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>How to fix common Hyper-V errors on Windows 10</title>
+      <link>http://staging.sa.muel.be/2015/how-to-fix-common-hyper-v-errors-on-windows-10/</link>
+      <pubDate>Sun, 11 Oct 2015 22:24:28 +0200</pubDate>
+      <author>s@muel.be (Samuel Debruyn)</author>
+      <guid>http://staging.sa.muel.be/2015/how-to-fix-common-hyper-v-errors-on-windows-10/</guid>
+      <description>&lt;p&gt;This short post is more of a note to myself for when I run into the same problem. I just wasted an hour on it so I guess that justifies it.&lt;/p&gt;
+
+&lt;p&gt;So, what happened? I wanted to check out the new &lt;a href=&#34;https://docs.docker.com/machine/&#34;&gt;Docker Machine&lt;/a&gt; with Hyper-V support, but the Hyper-V Manager told me it could not connect to my local computer.&lt;/p&gt;
+
+&lt;p&gt;When I opened Hyper-V Manager all I saw was an introduction. I then clicked &lt;em&gt;Connect to server&lt;/em&gt; and selected my local computer. A confusing error message appeared telling me that an object was not found. It was the &lt;em&gt;Hyper-V Virtual Machine Management service&lt;/em&gt; which seemed to be missing.&lt;/p&gt;
+
+&lt;p&gt;My hypervisor was running, the mentioned service was running, there were no errors in the Event Viewer&amp;hellip; everything seemed to be working fine.&lt;/p&gt;
+
+&lt;p&gt;A lot of Googling led me to &lt;a href=&#34;https://community.spiceworks.com/how_to/122307-fix-error-managing-hyper-v-server-2012-r2-from-windows-10&#34;&gt;a post&lt;/a&gt; mentioning a command that fixed this problem:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;MOFCOMP %SYSTEMROOT%\System32\WindowsVirtualization.V2.mof
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This command reinitializes Hyper-V management on your computer and fixes this error. It seems to be a frequent cause of headaches on Windows 10 hosts.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>How to get around OnePlus&#39;s horrible invite system</title>
@@ -841,38 +864,6 @@ adb shell su -c pm disable com.google.android.gsf/.update.SystemUpdateService$Se
 &lt;h2 id=&#34;this-post-is-all-about-nexus-devices-what-about-my-device:c209b0e2d2354aad9e56c75e001a618a&#34;&gt;This post is all about Nexus devices, what about my device?&lt;/h2&gt;
 
 &lt;p&gt;Most Android devices come with Google services like the Google Play Store. This means they also come with Google Play Services or the Google Services Framework or both. So, if you ever want to downgrade your Android device to a stock image, be sure to disable those pesky receivers…&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Natively boot Windows 10 Technical Preview with a virtual HDD</title>
-      <link>http://staging.sa.muel.be/2015/natively-boot-windows-10-technical-preview-with-a-virtual-hdd/</link>
-      <pubDate>Sun, 25 Jan 2015 00:00:00 +0000</pubDate>
-      <author>s@muel.be (Samuel Debruyn)</author>
-      <guid>http://staging.sa.muel.be/2015/natively-boot-windows-10-technical-preview-with-a-virtual-hdd/</guid>
-      <description>&lt;p&gt;A few days ago &lt;a href=&#34;https://insider.windows.com&#34;&gt;Microsoft released a new build for Windows 10&lt;/a&gt; and I wanted to give it a try. However, I didn&amp;rsquo;t want to resize my partitions or overwrite my Windows 8.1 partition.&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;Well, then install it in a VM!&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Then I wouldn&amp;rsquo;t have access to all of my RAM and CPU, so that wasn&amp;rsquo;t a solution either. However, I found the ideal solution.&lt;/p&gt;
-
-&lt;p&gt;Apparently you can &lt;strong&gt;install Windows in a virtual hard drive&lt;/strong&gt;. Let me guide you through:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Create a new VHD-file and remember the path to it. You can use &lt;em&gt;Disk Management&lt;/em&gt; (run &lt;code&gt;diskmgmt.msc&lt;/code&gt;) and click &lt;em&gt;Action&lt;/em&gt; and &lt;em&gt;Create VHD&lt;/em&gt;. I made it about 70 GB big with a dynamic size.&lt;/li&gt;
-&lt;li&gt;Boot into the Windows installation (use &lt;a href=&#34;https://rufus.akeo.ie/&#34;&gt;Rufus&lt;/a&gt; or something similar to create a bootable USB stick).&lt;/li&gt;
-&lt;li&gt;Select &lt;em&gt;Custom: Install Windows only (Advanced)&lt;/em&gt;, not an &lt;em&gt;Upgrade&lt;/em&gt;.&lt;/li&gt;
-&lt;li&gt;Now you have to select the partition on which you want to install Windows. Press &lt;em&gt;SHIFT+F10&lt;/em&gt; to open a command prompt instead.&lt;/li&gt;
-&lt;li&gt;Enter &lt;code&gt;diskpart&lt;/code&gt; to open the DiskPart utility.&lt;/li&gt;
-&lt;li&gt;In DiskPart enter &lt;code&gt;select vdisk file=C:\Windows10.vhd&lt;/code&gt; with the correct path to your VHD to select the VHD.&lt;/li&gt;
-&lt;li&gt;Now enter &lt;code&gt;attach vdisk&lt;/code&gt; and close the command prompt.&lt;/li&gt;
-&lt;li&gt;If you now press &lt;em&gt;Refresh&lt;/em&gt; you will see unallocated space on a newly added disk station, that is your virtual hard drive. Select it.&lt;/li&gt;
-&lt;li&gt;You can now continue installing Windows as usual.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;I was surprised to find out about this possibility. This way you can try the new Windows &lt;em&gt;in full&lt;/em&gt; without compromising your production environment.&lt;/p&gt;
 </description>
     </item>
     
