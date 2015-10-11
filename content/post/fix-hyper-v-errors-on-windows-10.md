@@ -1,6 +1,6 @@
 +++
-date = "2015-10-11T22:24:28+02:00"
-draft = true
+date = "2015-10-11T22:38:46+02:00"
+draft = false
 title = "How to fix common Hyper-V errors on Windows 10"
 tags = ["Windows", "Windows 10", "Hyper-V", "Docker", "virtualization"]
 +++
