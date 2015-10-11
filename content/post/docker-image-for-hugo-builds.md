@@ -2,7 +2,7 @@
 date = "2015-08-31T18:56:39+02:00"
 draft = false
 title = "Docker image for Hugo builds (with Wercker)"
-tags = ["Docker", "Hugo", "Wercker", "CI"]
+tags = ["Docker", "Hugo", "Wercker", "CI", "virtualization"]
 +++
 
 This blog is built with [Hugo](http://gohugo.io), which allows me to use some great CI tools like [Wercker](http://wercker.com). The first part of writing a *wercker.yml* is picking a build container.
