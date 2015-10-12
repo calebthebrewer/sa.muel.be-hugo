@@ -19,7 +19,7 @@
       <guid>http://staging.sa.muel.be/2015/run-docker-on-hyper-v-with-docker-machine/</guid>
       <description>
 
-&lt;p&gt;Docker is awesome, right? And thanks to [boot2docker]&lt;a href=&#34;http://boot2docker.io/(http://boot2docker.io/&#34;&gt;http://boot2docker.io/(http://boot2docker.io/&lt;/a&gt;) Windows users were no longer left out of the fun.&lt;/p&gt;
+&lt;p&gt;Docker is awesome, right? And thanks to &lt;a href=&#34;http://boot2docker.io/(http://boot2docker.io/&#34;&gt;boot2docker&lt;/a&gt; Windows users were no longer left out of the fun.&lt;/p&gt;
 
 &lt;p&gt;Still, setting everything up could be a PITA and you had to install Oracle VirtualBox to use it as Docker containers were actually run inside of a VM (which was the purpose of boot2docker). If you use Hyper-V regularly, you&amp;rsquo;ll notice that you can&amp;rsquo;t have it both ways. Scott Hanselman &lt;a href=&#34;http://www.hanselman.com/blog/SwitchEasilyBetweenVirtualBoxAndHyperVWithABCDEditBootEntryInWindows81.aspx&#34;&gt;figured out a way&lt;/a&gt; to make switching between the two a little bit less painful, but you still had to reboot your machine if you wanted to use VirtualBox.&lt;/p&gt;
 
@@ -37,11 +37,11 @@
 
 &lt;p&gt;Next, create a &lt;em&gt;Virtual Network Switch&lt;/em&gt;. Pick &lt;em&gt;internal&lt;/em&gt; as type.&lt;/p&gt;
 
-&lt;p&gt;Then go to your Network Connections, open the properties of your active internet connection and share the connection with the newly created virtual network switch. This will make sure that the IP of the boot2docker VM never changes and it still has internet acccess.&lt;/p&gt;
+&lt;p&gt;Then go to your Network Connections, open the properties of your active internet connection and share the connection with the newly created virtual network switch. This will make sure that the IP of the boot2docker VM never changes and it still has internet access.&lt;/p&gt;
 
 &lt;h2 id=&#34;download-and-install-docker-machine:cf9e56839475a0b7dfa86493bb900f82&#34;&gt;Download and &lt;em&gt;install&lt;/em&gt; Docker Machine&lt;/h2&gt;
 
-&lt;p&gt;You don&amp;rsquo;t need Docker Toolbox if you&amp;rsquo;re not going to use Oracle VirtualBox. Just download the latest version of Docker Machine from &lt;a href=&#34;https://github.com/docker/machine/releases/&#34;&gt;GitHub&lt;/a&gt;, rename it to &lt;em&gt;docker-machine.exe&lt;/em&gt; and put it in your PATH. That&amp;rsquo;s all there is to it.&lt;/p&gt;
+&lt;p&gt;You don&amp;rsquo;t need Docker Toolbox if you&amp;rsquo;re not going to use Oracle VirtualBox. Just download the latest version of Docker Machine from &lt;a href=&#34;https://github.com/docker/machine/releases/&#34;&gt;GitHub&lt;/a&gt;, rename it to &lt;code&gt;docker-machine.exe&lt;/code&gt; and put it in your &lt;em&gt;PATH&lt;/em&gt;. That&amp;rsquo;s all there is to it.&lt;/p&gt;
 
 &lt;h2 id=&#34;create-a-new-docker-machine-with-the-hyper-v-driver:cf9e56839475a0b7dfa86493bb900f82&#34;&gt;Create a new Docker Machine with the Hyper-V driver&lt;/h2&gt;
 
