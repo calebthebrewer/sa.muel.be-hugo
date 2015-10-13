@@ -1,6 +1,6 @@
 +++
 date = "2015-10-11T23:43:40+02:00"
-title = "Run Docker on Hyper-V with Docker machine"
+title = "Run Docker on Hyper-V with Docker Machine"
 tags = ["Docker", "virtualization", "Windows", "Hyper-V"]
 +++
 
@@ -30,7 +30,7 @@ You don't need Docker Toolbox if you're not going to use Oracle VirtualBox. Just
 
 ## Create a new Docker Machine with the Hyper-V driver
 
-Now open an administrative command prompt (you need to be an administrator to create new virtual machines) and execute the following command to create a new Docker Machine named *boot2docker*. Make sure to replace `My Internal Switch` with the name of internal switch you created before. You can add `--hyper-v-memory xxxx` before the name of the machine to change the default amount of memory (it's dynamic) from 1024 to something else.
+Now open an administrative command prompt (you need to be an administrator to create new virtual machines) and execute the following command to create a new Docker Machine named *boot2docker*. Make sure to replace `My Internal Switch` with the name of the internal switch you created before. You can add `--hyper-v-memory xxxx` before the name of the machine to change the default amount of memory (it's dynamic) from 1024 to something else.
 
 	docker-machine create --driver Hyper-V --hyper-v-virtual-switch "My Internal Switch" boot2docker
 	
