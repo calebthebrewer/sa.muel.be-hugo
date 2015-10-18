@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{.Site.LanguageCode}}">
 
+{{ $.Scratch.Set "description" .Site.Params.description }}
 {{ $isHomepage := (eq .Permalink (print .Site.BaseURL | safeHTML)) }}
 {{ $titleBase := (print " · " .Site.Title) }}
 {{ if $isHomepage }}
@@ -10,6 +11,13 @@
 {{else}}
     {{ $.Scratch.Set "title" (print .Title $titleBase) }}
 {{end}}
+{{ if .IsPage }}
+    {{ if .Description }}
+        {{ $.Scratch.Set "description" .Description }}
+    {{ else }}
+        {{ $.Scratch.Set "description" .Summary }}
+    {{ end }}
+{{ end }}
 
     <head>
 
@@ -27,9 +35,9 @@
         <meta name="twitter:url" content="{{ .Permalink }}" />
         <link rel="canonical" href="{{ .Permalink }}" />
         
-        <meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
-        <meta name="twitter:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
-        <meta property="og:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
+        <meta name="description" content="{{ $.Scratch.Get "description" }}" />
+        <meta name="twitter:description" content="{{ $.Scratch.Get "description" }}" />
+        <meta property="og:description" content="{{ $.Scratch.Get "description" }}" />
         
         <meta name="twitter:site" content="@{{ .Site.Params.twitter }}" />
         <meta name="twitter:creator" content="@{{ .Site.Params.twitter }}" />
@@ -59,7 +67,7 @@
                     {{ template "author-schema.html" . }}
                 },
                 "datePublished": "{{ .Date.Format "2006-01-02" }}",
-                {{ if .Description }}"description": "{{ .Description }}",{{ end }}
+                "description": "{{ $.Scratch.Get "description" }}",
                 "wordCount": {{ .WordCount }},
                 "articleSection": "{{ if .Section }}{{ .Section }}{{ else }}{{ .Type }}{{ end }}",
                 "timeRequired": "0:{{ .ReadingTime  }}:0",
