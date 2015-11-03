@@ -11,6 +11,8 @@ Hi there, you can call me Sam. I'm a C# .NET developer by day and software devel
 
 I'm finishing my IT studies at [Odisee](http://www.odisee.be/Odisee/Sections/Odisee-About-us.html) as an intern at [RealDolmen](http://realdolmen.be/en). My internship is about cross platform mobile app development with [Xamarin](http://xamarin.com/).
 
+Meanwhile, I'm also part-time ASP.NET developer at [Comm-IT](http://comm-it.be/).
+
 When I'm not reading up on the newest programming languages, development frameworks etc. I'm probably busy playing with them. My interests lie in (RESTful) APIs and cross platform apps. I especially like building complete SaaS solutions.
 
 ## How can you contact me?
