@@ -1,6 +1,6 @@
 +++
-date = "2015-11-11T18:38:37+01:00"
-draft = true
+date = "2015-11-18T21:37:49+01:00"
+draft = false
 title = "Tracking the trackers"
 tags = ["tracking"]
 +++
