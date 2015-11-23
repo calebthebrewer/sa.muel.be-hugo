@@ -40,6 +40,10 @@ The events and most important *views* are stored in SQL Server (Local DB).
 
 There is an extra view that keeps statistics of bookings per room per quarter. This view is rendered to **MongoDB**, so you also need a local MongoDB server.
 
+There are a few code diagrams to visualize how each layer interacts with the other layers.
+
+I created 4 branches with the 4 steps you have to take when developing a domain driven designed project.
+
 ## Slides
 
 With that demo also goes a presentation (in Dutch) which you can download [right here](https://onedrive.live.com/redir?resid=B5240A36EC9AE039!485572&authkey=!AFa6VJYzeHPv4hI&ithint=file%2cpptx). Let me know if the link is broken (I tend to move my files in my OneDrive around quite a lot).
