@@ -58,6 +58,10 @@
 
 &lt;p&gt;There is an extra view that keeps statistics of bookings per room per quarter. This view is rendered to &lt;strong&gt;MongoDB&lt;/strong&gt;, so you also need a local MongoDB server.&lt;/p&gt;
 
+&lt;p&gt;There are a few code diagrams to visualize how each layer interacts with the other layers.&lt;/p&gt;
+
+&lt;p&gt;I created 4 branches with the 4 steps you have to take when developing a domain driven designed project.&lt;/p&gt;
+
 &lt;h2 id=&#34;slides:ed6c2b7a433a54340e9aa358e2099648&#34;&gt;Slides&lt;/h2&gt;
 
 &lt;p&gt;With that demo also goes a presentation (in Dutch) which you can download &lt;a href=&#34;https://onedrive.live.com/redir?resid=B5240A36EC9AE039!485572&amp;amp;authkey=!AFa6VJYzeHPv4hI&amp;amp;ithint=file%2cpptx&#34;&gt;right here&lt;/a&gt;. Let me know if the link is broken (I tend to move my files in my OneDrive around quite a lot).&lt;/p&gt;
