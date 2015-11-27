@@ -1,6 +1,6 @@
 +++
-date = "2015-11-23T13:45:50+01:00"
-draft = true
+date = "2015-11-27T19:56:21+01:00"
+draft = false
 link = "https://github.com/SamuelDebruyn/AD5-Cirqus-demo"
 technology = ".NET"
 title = "Cirqus demo"
@@ -25,7 +25,7 @@ The project has the following layers:
 * Infrastructure: everything related to Cirqus, implementations of the services
 * Presentation: this layer isn't really a complete layer. It's just a simple console app to demonstrate how the domain and infrastructure layers work.
 
-The application and presentation layers were out of the scope of this project.
+The application and presentation layers are out of the scope of this project.
 
 The console app goes through the followings steps:
 
