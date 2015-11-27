@@ -15,6 +15,8 @@ Meanwhile, I'm also part-time ASP.NET (C#) developer at [Comm-IT](http://comm-it
 
 When I'm not reading up on the newest programming languages, development frameworks etc. I'm probably busy playing with them. My interests lie in (RESTful) APIs and cross platform apps.
 
+My dream job would be titled *Continuous Integration Consultant*. I looooove CI tools. Continuous integration and continuous testing are the best and easiest ways to improve the quality of software. As a software developer, it's an awesome experience to automagically receive feedback about your code in just a few minutes after pushing fresh code.
+
 ## How can you contact me?
 
 You should send me an email at [s@muel.be](mailto:s@muel.be) or a tweet at [@SamuelDebruyn](https://twitter.com/intent/user?screen_name=SamuelDebruyn).
