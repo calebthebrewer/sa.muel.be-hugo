@@ -8,13 +8,13 @@
     <language>en-us</language>
     <managingEditor>s@muel.be (Samuel Debruyn)</managingEditor>
     <webMaster>s@muel.be (Samuel Debruyn)</webMaster>
-    <lastBuildDate>Mon, 23 Nov 2015 13:45:50 +0100</lastBuildDate>
+    <lastBuildDate>Fri, 27 Nov 2015 19:56:21 +0100</lastBuildDate>
     <atom:link href="http://staging.sa.muel.be/portfolio/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Cirqus demo</title>
       <link>http://staging.sa.muel.be/portfolio/cirqus-demo/</link>
-      <pubDate>Mon, 23 Nov 2015 13:45:50 +0100</pubDate>
+      <pubDate>Fri, 27 Nov 2015 19:56:21 +0100</pubDate>
       <author>s@muel.be (Samuel Debruyn)</author>
       <guid>http://staging.sa.muel.be/portfolio/cirqus-demo/</guid>
       <description>
@@ -41,7 +41,7 @@
 &lt;li&gt;Presentation: this layer isn&amp;rsquo;t really a complete layer. It&amp;rsquo;s just a simple console app to demonstrate how the domain and infrastructure layers work.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;The application and presentation layers were out of the scope of this project.&lt;/p&gt;
+&lt;p&gt;The application and presentation layers are out of the scope of this project.&lt;/p&gt;
 
 &lt;p&gt;The console app goes through the followings steps:&lt;/p&gt;
 
